@@ -871,6 +871,7 @@ namespace JudoScoreboard
                     if (score.holdingRood >= score.houdgreepIppon)
                     {
                         score.setIppon(true, sRood);
+                        eindeWedstrijd();
                     }
                 }
                
@@ -889,6 +890,7 @@ namespace JudoScoreboard
                     if (score.holdingWit >= score.houdgreepIppon)
                     {
                         score.setIppon(true, sWit);
+                        eindeWedstrijd();
                     }
                 }
                
