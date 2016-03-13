@@ -8,3 +8,4 @@ d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScor
 d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.mainScreen.resources
 d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.publicScreen.resources
 d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.csprojResolveAssemblyReference.cache
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\bin\Debug\JudoScoreboard.exe.config
