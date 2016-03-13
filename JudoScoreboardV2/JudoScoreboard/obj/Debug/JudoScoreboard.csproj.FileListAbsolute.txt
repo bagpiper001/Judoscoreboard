@@ -1,0 +1,10 @@
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\bin\Debug\JudoScoreboard.exe.config
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\bin\Debug\JudoScoreboard.exe
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\bin\Debug\JudoScoreboard.pdb
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.Properties.Resources.resources
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.csproj.GenerateResource.Cache
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.exe
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.pdb
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.mainScreen.resources
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.publicScreen.resources
+d:\users\rberkel\documents\visual studio 2015\Projects\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.csprojResolveAssemblyReference.cache
