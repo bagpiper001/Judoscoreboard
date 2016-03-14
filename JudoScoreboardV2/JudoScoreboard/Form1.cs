@@ -23,6 +23,9 @@ namespace JudoScoreboard
         Color wit = Color.White;
         Color grijs = Color.Gray;
 
+        Font mainScreenStandardFont = new Font("Microsoft Sans Serif", 50);
+        Font mainScreenKleinFont = new Font("Microsoft Sans Serif", 20);
+
         //Strings used for getting and setting scores.
         String yuko = "yuko";
         String wazari = "wazari";
@@ -47,7 +50,8 @@ namespace JudoScoreboard
             if (screens.Length > 1)
             {
                 //Get the screen boundaries and put the front screen on the second monitor.
-                Rectangle boundVoorkant = screens[1].Bounds;
+                //Rectangle boundVoorkant = screens[1].Bounds;
+                Rectangle boundVoorkant = screens[1].WorkingArea;
                 voorkant.SetBounds(boundVoorkant.X, boundVoorkant.Y, boundVoorkant.Width, boundVoorkant.Height);
                 voorkant.StartPosition = FormStartPosition.Manual;
             }
@@ -67,6 +71,8 @@ namespace JudoScoreboard
         */
         public void initiateScreen()
         {
+            //test with anchors
+            lblYukoRood.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
             //invisible timer set & holding times.
             tbSec.Visible = false;
             tbMin.Visible = false;
@@ -88,10 +94,10 @@ namespace JudoScoreboard
             seconds = System.Convert.ToInt32(tbSec.Text);
             paused = true;
             lblMin.Text = "0"+ minutes.ToString();
-            lblMin.Font = standardFont;
+            lblMin.Font = mainScreenStandardFont;
             lblSec.Text = "0" + seconds.ToString();
-            lblSec.Font = standardFont;
-            lblTimeSeperate.Font = standardFont;
+            lblSec.Font = mainScreenStandardFont;
+            lblTimeSeperate.Font = mainScreenStandardFont;
 
             //initiate holding times
             score.houdgreepIppon = System.Convert.ToInt32(tbIppon.Text);
@@ -100,10 +106,10 @@ namespace JudoScoreboard
 
             //timer frontScreen
             voorkant.lblMin.Text = "0" + minutes.ToString();
-            voorkant.lblMin.Font = standardFont;
+            voorkant.lblMin.Font = mainScreenStandardFont;
             voorkant.lblSec.Text = "0" + seconds.ToString();
-            voorkant.lblSec.Font = standardFont;
-            voorkant.label1.Font = standardFont;
+            voorkant.lblSec.Font = mainScreenStandardFont;
+            voorkant.label1.Font = mainScreenStandardFont;
 
             //background
             this.BackColor = grijs;
@@ -200,92 +206,92 @@ namespace JudoScoreboard
                         
             //mainScreen
             lblYukoRood.Text = score.getRood(yuko).ToString();
-            lblYukoRood.Font = standardFont;
+            lblYukoRood.Font = mainScreenStandardFont;
             lblYukoRood.BackColor = rood;
 
             lblWazariRood.Text = score.getRood(wazari).ToString();
-            lblWazariRood.Font = standardFont;
+            lblWazariRood.Font = mainScreenStandardFont;
             lblWazariRood.BackColor = rood;
 
             lblIpponRood.Text = score.getRood(ippon).ToString();
-            lblIpponRood.Font = standardFont;
+            lblIpponRood.Font = mainScreenStandardFont;
             lblIpponRood.BackColor = rood;
 
             lblShidoRood.Text = score.getRood(shido).ToString();
-            lblShidoRood.Font = standardFont;
+            lblShidoRood.Font = mainScreenStandardFont;
             lblShidoRood.BackColor = rood;
 
             lblHoldingRood.Text = score.holdingRood.ToString();
-            lblHoldingRood.Font = standardFont;
+            lblHoldingRood.Font = mainScreenStandardFont;
             lblHoldingRood.BackColor = grijs;
 
             lblconfirmRood1.Text = score.confirmRood1.ToString();
-            lblconfirmRood1.Font = kleinFont;
+            lblconfirmRood1.Font = mainScreenKleinFont;
             lblconfirmRood1.BackColor = grijs;
             lblconfirmRood1.Visible = false;
 
             lblConfirmRood2.Text = score.confirmRood2.ToString();
-            lblConfirmRood2.Font = kleinFont;
+            lblConfirmRood2.Font = mainScreenKleinFont;
             lblConfirmRood2.BackColor = grijs;
             lblConfirmRood2.Visible = false;
 
             lblConfirmRood3.Text = score.confirmRood3.ToString();
-            lblConfirmRood3.Font = kleinFont;
+            lblConfirmRood3.Font = mainScreenKleinFont;
             lblConfirmRood3.BackColor = grijs;
             lblConfirmRood3.Visible = false;
 
-            lblIpponTextRood.Font = kleinFont;
+            lblIpponTextRood.Font = mainScreenKleinFont;
             lblIpponTextRood.BackColor = grijs;
-            lblWazariTextRood.Font = kleinFont;
+            lblWazariTextRood.Font = mainScreenKleinFont;
             lblWazariTextRood.BackColor = grijs;
-            lblYukoTextRood.Font = kleinFont;
+            lblYukoTextRood.Font = mainScreenKleinFont;
             lblYukoTextRood.BackColor = grijs;
-            lblShidoTextRood.Font = kleinFont;
+            lblShidoTextRood.Font = mainScreenKleinFont;
             lblShidoTextRood.BackColor = grijs;
 
             //wit
             lblYukoWit.Text = score.getWit(yuko).ToString();
-            lblYukoWit.Font = standardFont;
+            lblYukoWit.Font = mainScreenStandardFont;
             lblYukoWit.BackColor = wit;
 
             lblWazariWit.Text = score.getWit(wazari).ToString();
-            lblWazariWit.Font = standardFont;
+            lblWazariWit.Font = mainScreenStandardFont;
             lblWazariWit.BackColor = wit;
 
             lblIpponWit.Text = score.getWit(ippon).ToString();
-            lblIpponWit.Font = standardFont;
+            lblIpponWit.Font = mainScreenStandardFont;
             lblIpponWit.BackColor = wit;
 
             lblShidoWit.Text = score.getWit(shido).ToString();
-            lblShidoWit.Font = standardFont;
+            lblShidoWit.Font = mainScreenStandardFont;
             lblShidoWit.BackColor = wit;
 
             lblHoldingWit.Text = score.holdingWit.ToString();
-            lblHoldingWit.Font = standardFont;
+            lblHoldingWit.Font = mainScreenStandardFont;
             lblHoldingWit.BackColor = grijs;
 
             lblConfirmWit1.Text = score.confirmWit1.ToString();
-            lblConfirmWit1.Font = kleinFont;
+            lblConfirmWit1.Font = mainScreenKleinFont;
             lblConfirmWit1.BackColor = grijs;
             lblConfirmWit1.Visible = false;
 
             lblConfirmWit2.Text = score.confirmWit2.ToString();
-            lblConfirmWit2.Font = kleinFont;
+            lblConfirmWit2.Font = mainScreenKleinFont;
             lblConfirmWit2.BackColor = grijs;
             lblConfirmWit2.Visible = false;
 
             lblConfirmWit3.Text = score.confirmWit3.ToString();
-            lblConfirmWit3.Font = kleinFont;
+            lblConfirmWit3.Font = mainScreenKleinFont;
             lblConfirmWit3.BackColor = grijs;
             lblConfirmWit3.Visible = false;
 
-            lblIpponTextWit.Font = kleinFont;
+            lblIpponTextWit.Font = mainScreenKleinFont;
             lblIpponTextWit.BackColor = grijs;
-            lblWazariTextWit.Font = kleinFont;
+            lblWazariTextWit.Font = mainScreenKleinFont;
             lblWazariTextWit.BackColor = grijs;
-            lblYukoTextWit.Font = kleinFont;
+            lblYukoTextWit.Font = mainScreenKleinFont;
             lblYukoTextWit.BackColor = grijs;
-            lblShidoTextWit.Font = kleinFont;
+            lblShidoTextWit.Font = mainScreenKleinFont;
             lblShidoTextWit.BackColor = grijs;
 
 
@@ -860,7 +866,6 @@ namespace JudoScoreboard
             if(isRood)
             {
                 //update rood
-                //end match should occur when two wazari's are scored or 1 ippon is scored.
                 score.holdingRood += 1;
                 if (score.getRood(wazari) > 0 && score.holdingRood >= score.houdgreepWazari)
                 {
