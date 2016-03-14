@@ -66,6 +66,14 @@ namespace JudoScoreboard
         }
 
         /**
+        *This will be the method for dynamic scaling based on size of the form. (note that frontScreen will have its own method)
+        *It's called when this screen is resized.
+        */
+        private void mainScreen_Resize(object sender, System.EventArgs e)
+        {
+
+        }
+        /**
         *On initiation of the program this method will be run, it creates the form to their default size, color and value. 
         *Values will be gained from the Score Class.
         *Colors are default: Red for the red side, White for the white side and Gray as background color.

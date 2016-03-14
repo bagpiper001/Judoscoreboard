@@ -587,6 +587,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainScreen";
             this.Text = "JudoScoreboard";
+            this.Resize += new System.EventHandler(this.mainScreen_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 

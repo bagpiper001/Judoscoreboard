@@ -16,5 +16,14 @@ namespace JudoScoreboard
         {
             InitializeComponent();
         }
+
+        /**
+        *This is for resizing the public screen, in the end, the public screen will be dynamically scaled.
+        *This will be done in this method.
+        */
+        private void publicScreen_Resize(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

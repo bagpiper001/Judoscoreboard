@@ -336,6 +336,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "publicScreen";
             this.Text = "Judoscoreboard";
+            this.Resize += new System.EventHandler(this.publicScreen_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
