@@ -18,3 +18,6 @@ B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\Ju
 B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.csproj.GenerateResource.Cache
 B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.exe
 B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.pdb
+D:\Users\rberkel\Documents\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\bin\Debug\JudoScoreboard.exe.config
+D:\Users\rberkel\Documents\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.exe
+D:\Users\rberkel\Documents\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.pdb
