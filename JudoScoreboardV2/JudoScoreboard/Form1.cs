@@ -54,10 +54,12 @@ namespace JudoScoreboard
                 Rectangle boundVoorkant = screens[1].WorkingArea;
                 voorkant.SetBounds(boundVoorkant.X, boundVoorkant.Y, boundVoorkant.Width, boundVoorkant.Height);
                 voorkant.StartPosition = FormStartPosition.Manual;
+                voorkant.WindowState = FormWindowState.Maximized;
             }
             //Get the normal screen boundaries and make sure the mainscreen is maximized.
             Rectangle boundMain = screens[0].Bounds;
             this.SetBounds(boundMain.X, boundMain.Y, boundMain.Width, boundMain.Height);
+            this.WindowState = FormWindowState.Maximized;
             voorkant.Show();
             InitializeComponent();
             initiateScreen();
