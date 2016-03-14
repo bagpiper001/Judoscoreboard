@@ -860,6 +860,7 @@ namespace JudoScoreboard
             if(isRood)
             {
                 //update rood
+                //end match should occur when two wazari's are scored or 1 ippon is scored.
                 score.holdingRood += 1;
                 if (score.getRood(wazari) > 0 && score.holdingRood >= score.houdgreepWazari)
                 {
