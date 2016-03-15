@@ -22,6 +22,7 @@ namespace JudoScoreboard
         Color rood = Color.Red;
         Color wit = Color.White;
         Color grijs = Color.Gray;
+        Color blauw = Color.Blue;
 
         Font mainScreenStandardFont = new Font("Microsoft Sans Serif", 50);
         Font mainScreenKleinFont = new Font("Microsoft Sans Serif", 20);
@@ -39,6 +40,17 @@ namespace JudoScoreboard
         public int minutes;
         public bool paused;
 
+        //for dynamic scaling
+        public string[] witLabels = {"lblYukoWit", "lblWazariWit", "lblIpponWit", "lblYukoTextWit", "lblWazariTextWit", "lblIpponTextWit", "lblShidoWit", "lblShidoTextWit", "lblConfirmWit1", "lblConfirmWit2", "lblConfirmWit3", "lblHoldingWit"  };
+        public string[] roodLabels = { "lblYukoRood", "lblWazariRood", "lblIpponRood", "lblYukoTextRood", "lblWazariTextRood", "lblIpponTextRood", "lblShidoRood", "lblShidoTextRood", "lblConfirmRood1", "lblConfirmRood2", "lblConfirmRood3", "lblHoldingRood" };
+        public string[] timerLabels = { "lblMin", "lblTimeSeperate", "lblSec" };
+        public List<Control> buttonList = new List<Control>();
+        public List<Control> witLabelList = new List<Control>();
+        public List<Control> roodLabelList = new List<Control>();
+        public List<Control> timerLabelList = new List<Control>();
+        public int width;
+        public int height;
+        
         //holding timer
         public bool isRood = false;
 
@@ -60,18 +72,47 @@ namespace JudoScoreboard
             Rectangle boundMain = screens[0].Bounds;
             this.SetBounds(boundMain.X, boundMain.Y, boundMain.Width, boundMain.Height);
             this.WindowState = FormWindowState.Maximized;
+            width = this.Size.Width;
+            height = this.Size.Height;
             voorkant.Show();
             InitializeComponent();
             initiateScreen();
+
+            //fill lists for dynamic scale
+            foreach (Control control in this.Controls)
+            {
+                if (control.GetType() == typeof(Button))
+                    buttonList.Add((Button)control);
+            }
+            setButtonSize();
         }
 
+        private void setButtonSize()
+        {
+            //define height and width for buttons
+            if (this.Size.Width/6-5 > 90)
+                width = 90;
+            else
+                width = this.Size.Width/6-5;
+            if (this.Size.Height/6-12 > 30)
+                height = 30;
+            else
+                height = this.Size.Height/6-12;
+            foreach(Button button in buttonList)
+            {
+                button.Size = new Size(width, height);
+                button.Font = new Font("Microsoft Sans Serif", width/10);
+            }
+
+            
+        }
         /**
         *This will be the method for dynamic scaling based on size of the form. (note that frontScreen will have its own method)
         *It's called when this screen is resized.
         */
         private void mainScreen_Resize(object sender, System.EventArgs e)
         {
-
+            setButtonSize();
         }
         /**
         *On initiation of the program this method will be run, it creates the form to their default size, color and value. 
