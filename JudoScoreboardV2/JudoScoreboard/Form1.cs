@@ -48,6 +48,7 @@ namespace JudoScoreboard
         public List<Control> witLabelList = new List<Control>();
         public List<Control> roodLabelList = new List<Control>();
         public List<Control> timerLabelList = new List<Control>();
+
         public int width;
         public int height;
         
@@ -62,7 +63,6 @@ namespace JudoScoreboard
             if (screens.Length > 1)
             {
                 //Get the screen boundaries and put the front screen on the second monitor.
-                //Rectangle boundVoorkant = screens[1].Bounds;
                 Rectangle boundVoorkant = screens[1].WorkingArea;
                 voorkant.SetBounds(boundVoorkant.X, boundVoorkant.Y, boundVoorkant.Width, boundVoorkant.Height);
                 voorkant.StartPosition = FormStartPosition.Manual;
