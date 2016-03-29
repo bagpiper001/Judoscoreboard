@@ -41,12 +41,21 @@ namespace JudoScoreboard
         public bool paused;
 
         //for dynamic scaling
-        public string[] witLabels = {"lblYukoWit", "lblWazariWit", "lblIpponWit", "lblYukoTextWit", "lblWazariTextWit", "lblIpponTextWit", "lblShidoWit", "lblShidoTextWit", "lblConfirmWit1", "lblConfirmWit2", "lblConfirmWit3", "lblHoldingWit"  };
-        public string[] roodLabels = { "lblYukoRood", "lblWazariRood", "lblIpponRood", "lblYukoTextRood", "lblWazariTextRood", "lblIpponTextRood", "lblShidoRood", "lblShidoTextRood", "lblConfirmRood1", "lblConfirmRood2", "lblConfirmRood3", "lblHoldingRood" };
+        public string[] witLabels = {"lblYukoWit", "lblWazariWit", "lblIpponWit",  "lblShidoWit" };
+        public string[] witTextLabels = { "lblYukoTextWit", "lblWazariTextWit", "lblIpponTextWit", "lblShidoTextWit" };
+        public string[] witConfirmLabels = { "lblConfirmWit1", "lblConfirmWit2", "lblConfirmWit3" };
+        public string[] roodLabels = { "lblYukoRood", "lblWazariRood", "lblIpponRood",  "lblShidoRood" };
+        public string[] roodTextLabels = {"lblYukoTextRood", "lblWazariTextRood", "lblIpponTextRood", "lblShidoTextRood" };
+        public string[] roodConfirmLabels = { "lblConfirmRood1", "lblConfirmRood2", "lblConfirmRood3" };
         public string[] timerLabels = { "lblMin", "lblTimeSeperate", "lblSec" };
+
         public List<Control> buttonList = new List<Control>();
         public List<Control> witLabelList = new List<Control>();
+        public List<Control> witTextLabelList = new List<Control>();
+        public List<Control> witConfirmLabelList = new List<Control>();
         public List<Control> roodLabelList = new List<Control>();
+        public List<Control> roodTextLabelList = new List<Control>();
+        public List<Control> roodConfirmLabelList = new List<Control>();
         public List<Control> timerLabelList = new List<Control>();
 
         public int width;
@@ -83,8 +92,26 @@ namespace JudoScoreboard
             {
                 if (control.GetType() == typeof(Button))
                     buttonList.Add((Button)control);
+                if(control.GetType() == typeof(Label))
+                {
+                    if(witLabels.Contains(control.Name.ToString()))
+                        witLabelList.Add((Label)control);
+                    if (witConfirmLabels.Contains(control.Name.ToString()))
+                        witConfirmLabelList.Add((Label)control);
+                    if (witTextLabels.Contains(control.Name.ToString()))
+                        witTextLabelList.Add((Label)control);
+                    if (roodLabels.Contains(control.Name.ToString()))
+                        roodLabelList.Add((Label)control);
+                    if (roodTextLabels.Contains(control.Name.ToString()))
+                        roodTextLabelList.Add((Label)control);
+                    if (roodConfirmLabels.Contains(control.Name.ToString()))
+                        roodConfirmLabelList.Add((Label)control);
+                    if (timerLabels.Contains(control.Name.ToString()))
+                        timerLabelList.Add((Label)control);
+                }
             }
             setButtonSize();
+            setLabelSize(false);
         }
 
         private void setButtonSize()
@@ -94,10 +121,11 @@ namespace JudoScoreboard
                 width = 90;
             else
                 width = this.Size.Width/6-5;
-            if (this.Size.Height/6-12 > 30)
-                height = 30;
+            if (this.Size.Height/6-12 > 25)
+                height = 25;
             else
                 height = this.Size.Height/6-12;
+
             foreach(Button button in buttonList)
             {
                 button.Size = new Size(width, height);
@@ -105,6 +133,46 @@ namespace JudoScoreboard
             }
 
             
+        }
+
+        private void setLabelSize(Boolean resize)
+        {
+            if (!resize)
+            {
+                for (int i = 0; i < witLabelList.Count; i++)
+                {
+                    witLabelList[i].Font = mainScreenStandardFont;
+                    witTextLabelList[i].Font = mainScreenKleinFont;
+                }
+                for(int i= 0; i< roodLabelList.Count; i++)
+                {
+                    roodLabelList[i].Font = mainScreenStandardFont;
+                    roodTextLabelList[i].Font = mainScreenKleinFont;
+                }
+                for (int i = 0; i < witConfirmLabelList.Count; i++)
+                {
+                    witConfirmLabelList[i].Font = mainScreenKleinFont;
+                    witConfirmLabelList[i].BackColor = grijs;
+                    witConfirmLabelList[i].Visible = false;
+                }
+                for (int i = 0; i < roodConfirmLabelList.Count; i++)
+                {
+                    roodConfirmLabelList[i].Font = mainScreenKleinFont;
+                    roodConfirmLabelList[i].BackColor = grijs;
+                    roodConfirmLabelList[i].Visible = false;
+                }
+                
+                foreach (Label label in witLabelList)
+                    label.BackColor = wit;
+                foreach (Label label in roodLabelList)
+                    label.BackColor = rood;
+                foreach (Label label in timerLabelList)
+                    label.Font = mainScreenStandardFont;
+                foreach (Label label in witTextLabelList)
+                    label.BackColor = grijs;
+                foreach (Label label in roodTextLabelList)
+                    label.BackColor = grijs;
+            }
         }
         /**
         *This will be the method for dynamic scaling based on size of the form. (note that frontScreen will have its own method)
@@ -145,10 +213,9 @@ namespace JudoScoreboard
             seconds = System.Convert.ToInt32(tbSec.Text);
             paused = true;
             lblMin.Text = "0"+ minutes.ToString();
-            lblMin.Font = mainScreenStandardFont;
+
             lblSec.Text = "0" + seconds.ToString();
-            lblSec.Font = mainScreenStandardFont;
-            lblTimeSeperate.Font = mainScreenStandardFont;
+
 
             //initiate holding times
             score.houdgreepIppon = System.Convert.ToInt32(tbIppon.Text);
@@ -253,100 +320,34 @@ namespace JudoScoreboard
             voorkant.lblIpponTextRood.Font = kleinFont;
             voorkant.lblIpponTextWit.Font = kleinFont;
 
-            
-                        
+
+
             //mainScreen
-            lblYukoRood.Text = score.getRood(yuko).ToString();
-            lblYukoRood.Font = mainScreenStandardFont;
-            lblYukoRood.BackColor = rood;
-
-            lblWazariRood.Text = score.getRood(wazari).ToString();
-            lblWazariRood.Font = mainScreenStandardFont;
-            lblWazariRood.BackColor = rood;
-
-            lblIpponRood.Text = score.getRood(ippon).ToString();
-            lblIpponRood.Font = mainScreenStandardFont;
-            lblIpponRood.BackColor = rood;
-
-            lblShidoRood.Text = score.getRood(shido).ToString();
-            lblShidoRood.Font = mainScreenStandardFont;
-            lblShidoRood.BackColor = rood;
-
             lblHoldingRood.Text = score.holdingRood.ToString();
             lblHoldingRood.Font = mainScreenStandardFont;
             lblHoldingRood.BackColor = grijs;
 
-            lblconfirmRood1.Text = score.confirmRood1.ToString();
-            lblconfirmRood1.Font = mainScreenKleinFont;
-            lblconfirmRood1.BackColor = grijs;
-            lblconfirmRood1.Visible = false;
-
+            lblYukoRood.Text = score.getRood(yuko).ToString();
+            lblWazariRood.Text = score.getRood(wazari).ToString();
+            lblIpponRood.Text = score.getRood(ippon).ToString();
+            lblShidoRood.Text = score.getRood(shido).ToString();
+            lblConfirmRood1.Text = score.confirmRood1.ToString();
             lblConfirmRood2.Text = score.confirmRood2.ToString();
-            lblConfirmRood2.Font = mainScreenKleinFont;
-            lblConfirmRood2.BackColor = grijs;
-            lblConfirmRood2.Visible = false;
-
             lblConfirmRood3.Text = score.confirmRood3.ToString();
-            lblConfirmRood3.Font = mainScreenKleinFont;
-            lblConfirmRood3.BackColor = grijs;
-            lblConfirmRood3.Visible = false;
 
-            lblIpponTextRood.Font = mainScreenKleinFont;
-            lblIpponTextRood.BackColor = grijs;
-            lblWazariTextRood.Font = mainScreenKleinFont;
-            lblWazariTextRood.BackColor = grijs;
-            lblYukoTextRood.Font = mainScreenKleinFont;
-            lblYukoTextRood.BackColor = grijs;
-            lblShidoTextRood.Font = mainScreenKleinFont;
-            lblShidoTextRood.BackColor = grijs;
 
             //wit
-            lblYukoWit.Text = score.getWit(yuko).ToString();
-            lblYukoWit.Font = mainScreenStandardFont;
-            lblYukoWit.BackColor = wit;
-
-            lblWazariWit.Text = score.getWit(wazari).ToString();
-            lblWazariWit.Font = mainScreenStandardFont;
-            lblWazariWit.BackColor = wit;
-
-            lblIpponWit.Text = score.getWit(ippon).ToString();
-            lblIpponWit.Font = mainScreenStandardFont;
-            lblIpponWit.BackColor = wit;
-
-            lblShidoWit.Text = score.getWit(shido).ToString();
-            lblShidoWit.Font = mainScreenStandardFont;
-            lblShidoWit.BackColor = wit;
-
             lblHoldingWit.Text = score.holdingWit.ToString();
             lblHoldingWit.Font = mainScreenStandardFont;
             lblHoldingWit.BackColor = grijs;
 
+            lblYukoWit.Text = score.getWit(yuko).ToString();
+            lblWazariWit.Text = score.getWit(wazari).ToString();
+            lblIpponWit.Text = score.getWit(ippon).ToString();
+            lblShidoWit.Text = score.getWit(shido).ToString();
             lblConfirmWit1.Text = score.confirmWit1.ToString();
-            lblConfirmWit1.Font = mainScreenKleinFont;
-            lblConfirmWit1.BackColor = grijs;
-            lblConfirmWit1.Visible = false;
-
             lblConfirmWit2.Text = score.confirmWit2.ToString();
-            lblConfirmWit2.Font = mainScreenKleinFont;
-            lblConfirmWit2.BackColor = grijs;
-            lblConfirmWit2.Visible = false;
-
             lblConfirmWit3.Text = score.confirmWit3.ToString();
-            lblConfirmWit3.Font = mainScreenKleinFont;
-            lblConfirmWit3.BackColor = grijs;
-            lblConfirmWit3.Visible = false;
-
-            lblIpponTextWit.Font = mainScreenKleinFont;
-            lblIpponTextWit.BackColor = grijs;
-            lblWazariTextWit.Font = mainScreenKleinFont;
-            lblWazariTextWit.BackColor = grijs;
-            lblYukoTextWit.Font = mainScreenKleinFont;
-            lblYukoTextWit.BackColor = grijs;
-            lblShidoTextWit.Font = mainScreenKleinFont;
-            lblShidoTextWit.BackColor = grijs;
-
-
-
         }
 
         public void updateScreen()
@@ -368,12 +369,12 @@ namespace JudoScoreboard
 
             if (score.confirmRood1 > 0)
             {
-                lblconfirmRood1.Visible = true;
+                lblConfirmRood1.Visible = true;
                 voorkant.lblConfirmRood1.Visible = true;
             }
             else
             {
-                lblconfirmRood1.Visible = false;
+                lblConfirmRood1.Visible = false;
                 voorkant.lblConfirmRood1.Visible = false;
             }
             if (score.confirmRood2 > 0)
@@ -397,7 +398,7 @@ namespace JudoScoreboard
                 voorkant.lblConfirmRood3.Visible = false;
             }
 
-            lblconfirmRood1.Text = score.confirmRood1.ToString();
+            lblConfirmRood1.Text = score.confirmRood1.ToString();
             voorkant.lblConfirmRood1.Text = score.confirmRood1.ToString();
             lblConfirmRood2.Text = score.confirmRood2.ToString();
             voorkant.lblConfirmRood2.Text = score.confirmRood2.ToString();
@@ -580,10 +581,12 @@ namespace JudoScoreboard
             this.BackColor = grijs;
             voorkant.BackColor = grijs;
 
-            lblWazariRood.BackColor = rood;
-            lblShidoRood.BackColor = rood;
-            lblIpponRood.BackColor = rood;
-            lblYukoRood.BackColor = rood;
+            foreach (Label label in roodLabelList)
+                label.BackColor = rood;
+            foreach (Label label in roodTextLabelList)
+                label.BackColor = grijs;
+            foreach (Label label in roodConfirmLabelList)
+                label.BackColor = grijs;
             voorkant.lblYukoRood.BackColor = rood;
             voorkant.lblWazariRood.BackColor = rood;
             voorkant.lblIpponRood.BackColor = rood;
@@ -594,10 +597,12 @@ namespace JudoScoreboard
             voorkant.lblHoldingWit.BackColor = grijs;
             voorkant.lblHoldingRood.BackColor = grijs;
 
-            lblYukoWit.BackColor = wit;
-            lblWazariWit.BackColor = wit;
-            lblIpponWit.BackColor = wit;
-            lblShidoWit.BackColor = wit;
+            foreach (Label label in witLabelList)
+                label.BackColor = wit;
+            foreach (Label label in witTextLabelList)
+                label.BackColor = grijs;
+            foreach (Label label in witConfirmLabelList)
+                label.BackColor = grijs;
             voorkant.lblYukoWit.BackColor = wit;
             voorkant.lblWazariWit.BackColor = wit;
             voorkant.lblIpponWit.BackColor = wit;
@@ -619,7 +624,7 @@ namespace JudoScoreboard
             lblHoldingWit.Visible = false;
             voorkant.lblHoldingWit.Visible = false;
             voorkant.lblHoldingRood.Visible = false;
-            lblconfirmRood1.Visible = false;
+            lblConfirmRood1.Visible = false;
             lblConfirmRood2.Visible = false;
             lblConfirmRood3.Visible = false;
             btChangeHolding.Visible = false;
@@ -685,12 +690,12 @@ namespace JudoScoreboard
         //color methods are used to color the screen for a winner.
         public void colorRed()
         {
-            lblShidoWit.BackColor = rood;
-            lblYukoWit.BackColor = rood;
-            lblIpponWit.BackColor = rood;
-            lblWazariWit.BackColor = rood;
-            lblHoldingWit.BackColor = rood;
-            lblHoldingRood.BackColor = rood;
+            foreach (Label label in witTextLabelList)
+                label.BackColor = rood;
+            foreach (Label label in witLabelList)
+                label.BackColor = rood;
+            foreach (Label label in roodTextLabelList)
+                label.BackColor = rood;
 
             this.BackColor = rood;
             voorkant.BackColor = rood;
@@ -705,12 +710,12 @@ namespace JudoScoreboard
 
         public void colorWhite()
         {
-            lblShidoRood.BackColor = wit;
-            lblYukoRood.BackColor = wit;
-            lblWazariRood.BackColor = wit;
-            lblIpponRood.BackColor = wit;
-            lblHoldingWit.BackColor = wit;
-            lblHoldingRood.BackColor = wit;
+            foreach (Label label in roodLabelList)
+                label.BackColor = wit;
+            foreach (Label label in roodTextLabelList)
+                label.BackColor = wit;
+            foreach (Label label in witTextLabelList)
+                label.BackColor = wit;
 
             this.BackColor = wit;
             voorkant.BackColor = wit;
@@ -981,7 +986,7 @@ namespace JudoScoreboard
                 if(score.confirmRood1 == 0)
                 {
                     score.confirmRood1 = score.holdingRood;
-                    lblconfirmRood1.Visible = true;
+                    lblConfirmRood1.Visible = true;
                     voorkant.lblConfirmRood1.Visible = true;
                 }
                 else

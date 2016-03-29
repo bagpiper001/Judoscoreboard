@@ -50,7 +50,7 @@
             this.tmrHolding = new System.Windows.Forms.Timer(this.components);
             this.lblHoldingRood = new System.Windows.Forms.Label();
             this.lblHoldingWit = new System.Windows.Forms.Label();
-            this.lblconfirmRood1 = new System.Windows.Forms.Label();
+            this.lblConfirmRood1 = new System.Windows.Forms.Label();
             this.lblConfirmRood2 = new System.Windows.Forms.Label();
             this.lblConfirmRood3 = new System.Windows.Forms.Label();
             this.lblConfirmWit1 = new System.Windows.Forms.Label();
@@ -277,17 +277,17 @@
             this.lblHoldingWit.Text = "0";
             this.lblHoldingWit.Click += new System.EventHandler(this.lblHoldingWit_Click);
             // 
-            // lblconfirmRood1
+            // lblConfirmRood1
             // 
-            this.lblconfirmRood1.AutoSize = true;
-            this.lblconfirmRood1.BackColor = System.Drawing.Color.FloralWhite;
-            this.lblconfirmRood1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblconfirmRood1.Location = new System.Drawing.Point(111, 636);
-            this.lblconfirmRood1.Name = "lblconfirmRood1";
-            this.lblconfirmRood1.Size = new System.Drawing.Size(13, 13);
-            this.lblconfirmRood1.TabIndex = 18;
-            this.lblconfirmRood1.Text = "0";
-            this.lblconfirmRood1.Click += new System.EventHandler(this.lblconfirmRood1_Click);
+            this.lblConfirmRood1.AutoSize = true;
+            this.lblConfirmRood1.BackColor = System.Drawing.Color.FloralWhite;
+            this.lblConfirmRood1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmRood1.Location = new System.Drawing.Point(111, 636);
+            this.lblConfirmRood1.Name = "lblConfirmRood1";
+            this.lblConfirmRood1.Size = new System.Drawing.Size(13, 13);
+            this.lblConfirmRood1.TabIndex = 18;
+            this.lblConfirmRood1.Text = "0";
+            this.lblConfirmRood1.Click += new System.EventHandler(this.lblconfirmRood1_Click);
             // 
             // lblConfirmRood2
             // 
@@ -565,7 +565,7 @@
             this.Controls.Add(this.lblConfirmWit1);
             this.Controls.Add(this.lblConfirmRood3);
             this.Controls.Add(this.lblConfirmRood2);
-            this.Controls.Add(this.lblconfirmRood1);
+            this.Controls.Add(this.lblConfirmRood1);
             this.Controls.Add(this.lblHoldingWit);
             this.Controls.Add(this.lblHoldingRood);
             this.Controls.Add(this.btRestart);
@@ -615,7 +615,7 @@
         private System.Windows.Forms.Timer tmrHolding;
         private System.Windows.Forms.Label lblHoldingRood;
         private System.Windows.Forms.Label lblHoldingWit;
-        private System.Windows.Forms.Label lblconfirmRood1;
+        private System.Windows.Forms.Label lblConfirmRood1;
         private System.Windows.Forms.Label lblConfirmRood2;
         private System.Windows.Forms.Label lblConfirmRood3;
         private System.Windows.Forms.Label lblConfirmWit1;
