@@ -181,6 +181,7 @@ namespace JudoScoreboard
         private void mainScreen_Resize(object sender, System.EventArgs e)
         {
             setButtonSize();
+            setLabelSize(true);
         }
         /**
         *On initiation of the program this method will be run, it creates the form to their default size, color and value. 
@@ -618,8 +619,10 @@ namespace JudoScoreboard
             minutes = System.Convert.ToInt32(tbMin.Text);
             seconds = System.Convert.ToInt32(tbSec.Text);
             paused = true;
-            cbTijd.Enabled = true;            
-
+            cbTijd.Enabled = true;
+            tmrHolding.Enabled = false;
+            score.holdingRood = 0;
+            score.holdingWit = 0;
             lblHoldingRood.Visible = false;
             lblHoldingWit.Visible = false;
             voorkant.lblHoldingWit.Visible = false;
@@ -645,6 +648,9 @@ namespace JudoScoreboard
         {
             tmrClock.Enabled = false;
             tmrHolding.Enabled = false;
+            lblHoldingWit.Enabled = false;
+            lblHoldingRood.Enabled = false;
+            btChangeHolding.Visible = false;
             btRestart.Enabled = true;
             if (score.getWinnaarRood())
             {
@@ -696,7 +702,12 @@ namespace JudoScoreboard
                 label.BackColor = rood;
             foreach (Label label in roodTextLabelList)
                 label.BackColor = rood;
-
+            foreach (Label label in witConfirmLabelList)
+                label.BackColor = rood;
+            foreach (Label label in roodConfirmLabelList)
+                label.BackColor = rood;
+            lblHoldingWit.BackColor = rood;
+            lblHoldingRood.BackColor = rood;
             this.BackColor = rood;
             voorkant.BackColor = rood;
 
@@ -716,7 +727,12 @@ namespace JudoScoreboard
                 label.BackColor = wit;
             foreach (Label label in witTextLabelList)
                 label.BackColor = wit;
-
+            foreach (Label label in witConfirmLabelList)
+                label.BackColor = wit;
+            foreach (Label label in roodConfirmLabelList)
+                label.BackColor = wit;
+            lblHoldingRood.BackColor = wit;
+            lblHoldingWit.BackColor = wit;
             this.BackColor = wit;
             voorkant.BackColor = wit;
 

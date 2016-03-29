@@ -93,7 +93,7 @@
             // lblYukoWit
             // 
             this.lblYukoWit.AutoSize = true;
-            this.lblYukoWit.Location = new System.Drawing.Point(913, 52);
+            this.lblYukoWit.Location = new System.Drawing.Point(872, 52);
             this.lblYukoWit.Name = "lblYukoWit";
             this.lblYukoWit.Size = new System.Drawing.Size(13, 13);
             this.lblYukoWit.TabIndex = 1;
@@ -211,7 +211,7 @@
             // lblWazariWit
             // 
             this.lblWazariWit.AutoSize = true;
-            this.lblWazariWit.Location = new System.Drawing.Point(1121, 52);
+            this.lblWazariWit.Location = new System.Drawing.Point(1080, 52);
             this.lblWazariWit.Name = "lblWazariWit";
             this.lblWazariWit.Size = new System.Drawing.Size(13, 13);
             this.lblWazariWit.TabIndex = 12;
@@ -221,7 +221,7 @@
             // lblIpponWit
             // 
             this.lblIpponWit.AutoSize = true;
-            this.lblIpponWit.Location = new System.Drawing.Point(1304, 52);
+            this.lblIpponWit.Location = new System.Drawing.Point(1263, 52);
             this.lblIpponWit.Name = "lblIpponWit";
             this.lblIpponWit.Size = new System.Drawing.Size(13, 13);
             this.lblIpponWit.TabIndex = 13;
@@ -231,7 +231,7 @@
             // lblShidoWit
             // 
             this.lblShidoWit.AutoSize = true;
-            this.lblShidoWit.Location = new System.Drawing.Point(1304, 337);
+            this.lblShidoWit.Location = new System.Drawing.Point(1263, 337);
             this.lblShidoWit.Name = "lblShidoWit";
             this.lblShidoWit.Size = new System.Drawing.Size(13, 13);
             this.lblShidoWit.TabIndex = 14;
@@ -405,7 +405,7 @@
             // 
             // btYukoWit
             // 
-            this.btYukoWit.Location = new System.Drawing.Point(916, 140);
+            this.btYukoWit.Location = new System.Drawing.Point(875, 140);
             this.btYukoWit.Name = "btYukoWit";
             this.btYukoWit.Size = new System.Drawing.Size(75, 23);
             this.btYukoWit.TabIndex = 30;
@@ -415,7 +415,7 @@
             // 
             // btWazariWit
             // 
-            this.btWazariWit.Location = new System.Drawing.Point(1124, 140);
+            this.btWazariWit.Location = new System.Drawing.Point(1083, 140);
             this.btWazariWit.Name = "btWazariWit";
             this.btWazariWit.Size = new System.Drawing.Size(83, 23);
             this.btWazariWit.TabIndex = 31;
@@ -425,7 +425,7 @@
             // 
             // btIpponWit
             // 
-            this.btIpponWit.Location = new System.Drawing.Point(1307, 140);
+            this.btIpponWit.Location = new System.Drawing.Point(1266, 140);
             this.btIpponWit.Name = "btIpponWit";
             this.btIpponWit.Size = new System.Drawing.Size(75, 23);
             this.btIpponWit.TabIndex = 32;
@@ -435,7 +435,7 @@
             // 
             // btShidoWit
             // 
-            this.btShidoWit.Location = new System.Drawing.Point(1307, 421);
+            this.btShidoWit.Location = new System.Drawing.Point(1266, 421);
             this.btShidoWit.Name = "btShidoWit";
             this.btShidoWit.Size = new System.Drawing.Size(75, 23);
             this.btShidoWit.TabIndex = 33;
@@ -475,7 +475,7 @@
             // lblIpponTextWit
             // 
             this.lblIpponTextWit.AutoSize = true;
-            this.lblIpponTextWit.Location = new System.Drawing.Point(1304, 9);
+            this.lblIpponTextWit.Location = new System.Drawing.Point(1263, 9);
             this.lblIpponTextWit.Name = "lblIpponTextWit";
             this.lblIpponTextWit.Size = new System.Drawing.Size(34, 13);
             this.lblIpponTextWit.TabIndex = 37;
@@ -484,7 +484,7 @@
             // lblWazariTextWit
             // 
             this.lblWazariTextWit.AutoSize = true;
-            this.lblWazariTextWit.Location = new System.Drawing.Point(1094, 9);
+            this.lblWazariTextWit.Location = new System.Drawing.Point(1053, 9);
             this.lblWazariTextWit.Name = "lblWazariTextWit";
             this.lblWazariTextWit.Size = new System.Drawing.Size(40, 13);
             this.lblWazariTextWit.TabIndex = 38;
@@ -502,7 +502,7 @@
             // lblYukoTextWit
             // 
             this.lblYukoTextWit.AutoSize = true;
-            this.lblYukoTextWit.Location = new System.Drawing.Point(913, 9);
+            this.lblYukoTextWit.Location = new System.Drawing.Point(872, 9);
             this.lblYukoTextWit.Name = "lblYukoTextWit";
             this.lblYukoTextWit.Size = new System.Drawing.Size(32, 13);
             this.lblYukoTextWit.TabIndex = 40;
@@ -529,7 +529,7 @@
             // lblShidoTextWit
             // 
             this.lblShidoTextWit.AutoSize = true;
-            this.lblShidoTextWit.Location = new System.Drawing.Point(1304, 270);
+            this.lblShidoTextWit.Location = new System.Drawing.Point(1263, 270);
             this.lblShidoTextWit.Name = "lblShidoTextWit";
             this.lblShidoTextWit.Size = new System.Drawing.Size(34, 13);
             this.lblShidoTextWit.TabIndex = 43;
