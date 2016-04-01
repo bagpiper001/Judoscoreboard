@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 /**
-*
+* The class Score holds the score for both red and white. 
+* It contains methods to get, set and calculate the score.
+* Because it holds the scores, it can also calculate a winner.
 */
 
 namespace JudoScoreboard
@@ -63,8 +65,6 @@ namespace JudoScoreboard
             confirmWit2 = 0;
             confirmRood3 = 0;
             confirmWit3 = 0;
-
-
         }
 
         //Get all red values

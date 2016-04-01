@@ -42,7 +42,7 @@
             this.tbMin = new System.Windows.Forms.TextBox();
             this.tbSec = new System.Windows.Forms.TextBox();
             this.btTime = new System.Windows.Forms.Button();
-            this.cbTijd = new System.Windows.Forms.CheckBox();
+            this.cbSettings = new System.Windows.Forms.CheckBox();
             this.lblWazariWit = new System.Windows.Forms.Label();
             this.lblIpponWit = new System.Windows.Forms.Label();
             this.lblShidoWit = new System.Windows.Forms.Label();
@@ -127,7 +127,7 @@
             // lblMin
             // 
             this.lblMin.AutoSize = true;
-            this.lblMin.Location = new System.Drawing.Point(424, 536);
+            this.lblMin.Location = new System.Drawing.Point(507, 536);
             this.lblMin.Name = "lblMin";
             this.lblMin.Size = new System.Drawing.Size(19, 13);
             this.lblMin.TabIndex = 4;
@@ -152,7 +152,7 @@
             // lblSec
             // 
             this.lblSec.AutoSize = true;
-            this.lblSec.Location = new System.Drawing.Point(679, 536);
+            this.lblSec.Location = new System.Drawing.Point(651, 536);
             this.lblSec.Name = "lblSec";
             this.lblSec.Size = new System.Drawing.Size(19, 13);
             this.lblSec.TabIndex = 6;
@@ -189,7 +189,7 @@
             // 
             // btTime
             // 
-            this.btTime.Location = new System.Drawing.Point(612, 463);
+            this.btTime.Location = new System.Drawing.Point(612, 349);
             this.btTime.Name = "btTime";
             this.btTime.Size = new System.Drawing.Size(75, 23);
             this.btTime.TabIndex = 10;
@@ -197,16 +197,16 @@
             this.btTime.UseVisualStyleBackColor = true;
             this.btTime.Click += new System.EventHandler(this.btTime_Click);
             // 
-            // cbTijd
+            // cbSettings
             // 
-            this.cbTijd.AutoSize = true;
-            this.cbTijd.Location = new System.Drawing.Point(612, 87);
-            this.cbTijd.Name = "cbTijd";
-            this.cbTijd.Size = new System.Drawing.Size(70, 17);
-            this.cbTijd.TabIndex = 11;
-            this.cbTijd.Text = "Wijzig tijd";
-            this.cbTijd.UseVisualStyleBackColor = true;
-            this.cbTijd.CheckedChanged += new System.EventHandler(this.cbTijd_CheckedChanged);
+            this.cbSettings.AutoSize = true;
+            this.cbSettings.Location = new System.Drawing.Point(612, 87);
+            this.cbSettings.Name = "cbSettings";
+            this.cbSettings.Size = new System.Drawing.Size(109, 17);
+            this.cbSettings.TabIndex = 11;
+            this.cbSettings.Text = "Wijzig instellingen";
+            this.cbSettings.UseVisualStyleBackColor = true;
+            this.cbSettings.CheckedChanged += new System.EventHandler(this.cbTijd_CheckedChanged);
             // 
             // lblWazariWit
             // 
@@ -572,7 +572,7 @@
             this.Controls.Add(this.lblShidoWit);
             this.Controls.Add(this.lblIpponWit);
             this.Controls.Add(this.lblWazariWit);
-            this.Controls.Add(this.cbTijd);
+            this.Controls.Add(this.cbSettings);
             this.Controls.Add(this.btTime);
             this.Controls.Add(this.tbSec);
             this.Controls.Add(this.tbMin);
@@ -607,7 +607,7 @@
         private System.Windows.Forms.TextBox tbMin;
         private System.Windows.Forms.TextBox tbSec;
         private System.Windows.Forms.Button btTime;
-        private System.Windows.Forms.CheckBox cbTijd;
+        private System.Windows.Forms.CheckBox cbSettings;
         private System.Windows.Forms.Label lblWazariWit;
         private System.Windows.Forms.Label lblIpponWit;
         private System.Windows.Forms.Label lblShidoWit;

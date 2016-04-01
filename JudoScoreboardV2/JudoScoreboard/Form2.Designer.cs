@@ -34,7 +34,7 @@
             this.lblWazariRood = new System.Windows.Forms.Label();
             this.lblIpponRood = new System.Windows.Forms.Label();
             this.lblSec = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTimeSeperate = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.lblShidoRood = new System.Windows.Forms.Label();
             this.lblWazariWit = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             // lblYukoRood
             // 
             this.lblYukoRood.AutoSize = true;
-            this.lblYukoRood.Location = new System.Drawing.Point(1103, 111);
+            this.lblYukoRood.Location = new System.Drawing.Point(1024, 111);
             this.lblYukoRood.Name = "lblYukoRood";
             this.lblYukoRood.Size = new System.Drawing.Size(13, 13);
             this.lblYukoRood.TabIndex = 1;
@@ -79,7 +79,7 @@
             // lblWazariRood
             // 
             this.lblWazariRood.AutoSize = true;
-            this.lblWazariRood.Location = new System.Drawing.Point(1287, 111);
+            this.lblWazariRood.Location = new System.Drawing.Point(1208, 111);
             this.lblWazariRood.Name = "lblWazariRood";
             this.lblWazariRood.Size = new System.Drawing.Size(13, 13);
             this.lblWazariRood.TabIndex = 2;
@@ -88,7 +88,7 @@
             // lblIpponRood
             // 
             this.lblIpponRood.AutoSize = true;
-            this.lblIpponRood.Location = new System.Drawing.Point(1477, 111);
+            this.lblIpponRood.Location = new System.Drawing.Point(1398, 111);
             this.lblIpponRood.Name = "lblIpponRood";
             this.lblIpponRood.Size = new System.Drawing.Size(13, 13);
             this.lblIpponRood.TabIndex = 3;
@@ -97,25 +97,25 @@
             // lblSec
             // 
             this.lblSec.AutoSize = true;
-            this.lblSec.Location = new System.Drawing.Point(936, 676);
+            this.lblSec.Location = new System.Drawing.Point(916, 676);
             this.lblSec.Name = "lblSec";
             this.lblSec.Size = new System.Drawing.Size(19, 13);
             this.lblSec.TabIndex = 9;
             this.lblSec.Text = "00";
             // 
-            // label1
+            // lblTimeSeperate
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(862, 676);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(10, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = ":";
+            this.lblTimeSeperate.AutoSize = true;
+            this.lblTimeSeperate.Location = new System.Drawing.Point(862, 676);
+            this.lblTimeSeperate.Name = "lblTimeSeperate";
+            this.lblTimeSeperate.Size = new System.Drawing.Size(10, 13);
+            this.lblTimeSeperate.TabIndex = 8;
+            this.lblTimeSeperate.Text = ":";
             // 
             // lblMin
             // 
             this.lblMin.AutoSize = true;
-            this.lblMin.Location = new System.Drawing.Point(681, 676);
+            this.lblMin.Location = new System.Drawing.Point(767, 676);
             this.lblMin.Name = "lblMin";
             this.lblMin.Size = new System.Drawing.Size(19, 13);
             this.lblMin.TabIndex = 7;
@@ -124,7 +124,7 @@
             // lblShidoRood
             // 
             this.lblShidoRood.AutoSize = true;
-            this.lblShidoRood.Location = new System.Drawing.Point(1477, 513);
+            this.lblShidoRood.Location = new System.Drawing.Point(1398, 513);
             this.lblShidoRood.Name = "lblShidoRood";
             this.lblShidoRood.Size = new System.Drawing.Size(13, 13);
             this.lblShidoRood.TabIndex = 10;
@@ -241,7 +241,7 @@
             // lblShidoTextRood
             // 
             this.lblShidoTextRood.AutoSize = true;
-            this.lblShidoTextRood.Location = new System.Drawing.Point(1477, 437);
+            this.lblShidoTextRood.Location = new System.Drawing.Point(1398, 437);
             this.lblShidoTextRood.Name = "lblShidoTextRood";
             this.lblShidoTextRood.Size = new System.Drawing.Size(34, 13);
             this.lblShidoTextRood.TabIndex = 45;
@@ -277,7 +277,7 @@
             // lblYukoTextRood
             // 
             this.lblYukoTextRood.AutoSize = true;
-            this.lblYukoTextRood.Location = new System.Drawing.Point(1103, 29);
+            this.lblYukoTextRood.Location = new System.Drawing.Point(1024, 29);
             this.lblYukoTextRood.Name = "lblYukoTextRood";
             this.lblYukoTextRood.Size = new System.Drawing.Size(32, 13);
             this.lblYukoTextRood.TabIndex = 49;
@@ -286,7 +286,7 @@
             // lblWazariTextRood
             // 
             this.lblWazariTextRood.AutoSize = true;
-            this.lblWazariTextRood.Location = new System.Drawing.Point(1278, 29);
+            this.lblWazariTextRood.Location = new System.Drawing.Point(1199, 29);
             this.lblWazariTextRood.Name = "lblWazariTextRood";
             this.lblWazariTextRood.Size = new System.Drawing.Size(40, 13);
             this.lblWazariTextRood.TabIndex = 50;
@@ -295,7 +295,7 @@
             // lblIpponTextRood
             // 
             this.lblIpponTextRood.AutoSize = true;
-            this.lblIpponTextRood.Location = new System.Drawing.Point(1477, 29);
+            this.lblIpponTextRood.Location = new System.Drawing.Point(1398, 29);
             this.lblIpponTextRood.Name = "lblIpponTextRood";
             this.lblIpponTextRood.Size = new System.Drawing.Size(34, 13);
             this.lblIpponTextRood.TabIndex = 51;
@@ -327,7 +327,7 @@
             this.Controls.Add(this.lblWazariWit);
             this.Controls.Add(this.lblShidoRood);
             this.Controls.Add(this.lblSec);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTimeSeperate);
             this.Controls.Add(this.lblMin);
             this.Controls.Add(this.lblIpponRood);
             this.Controls.Add(this.lblWazariRood);
@@ -349,7 +349,7 @@
         public System.Windows.Forms.Label lblWazariRood;
         public System.Windows.Forms.Label lblIpponRood;
         public System.Windows.Forms.Label lblSec;
-        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lblTimeSeperate;
         public System.Windows.Forms.Label lblMin;
         public System.Windows.Forms.Label lblShidoRood;
         public System.Windows.Forms.Label lblWazariWit;

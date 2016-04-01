@@ -541,7 +541,7 @@ namespace JudoScoreboard
         */
         public void timeIsTicking()
         {
-            cbTijd.Enabled = false;
+            cbSettings.Enabled = false;
             btRestart.Enabled = false;
 
             lblHoldingWit.Visible = true;
@@ -552,7 +552,7 @@ namespace JudoScoreboard
 
         public void timeIsPause()
         {
-            cbTijd.Enabled = true;
+            cbSettings.Enabled = true;
             btRestart.Enabled = true;
 
             lblHoldingRood.Visible = false;
@@ -610,7 +610,7 @@ namespace JudoScoreboard
             minutes = System.Convert.ToInt32(tbMin.Text);
             seconds = System.Convert.ToInt32(tbSec.Text);
             paused = true;
-            cbTijd.Enabled = true;
+            cbSettings.Enabled = true;
             tmrHolding.Enabled = false;
             score.holdingRood = 0;
             score.holdingWit = 0;
@@ -706,12 +706,18 @@ namespace JudoScoreboard
             this.BackColor = rood;
             voorkant.BackColor = rood;
 
-            voorkant.lblWazariWit.BackColor = rood;
-            voorkant.lblYukoWit.BackColor = rood;
-            voorkant.lblIpponWit.BackColor = rood;
-            voorkant.lblShidoWit.BackColor = rood;
-            voorkant.lblHoldingRood.BackColor = rood;
-            voorkant.lblHoldingWit.BackColor = rood;
+            foreach (Label label in roodVoorkantConfirmLabelList)
+                label.BackColor = rood;
+            foreach (Label label in roodVoorkantTextLabelList)
+                label.BackColor = rood;
+            foreach (Label label in roodVoorkantLabelList)
+                label.BackColor = rood;
+            foreach (Label label in witVoorkantConfirmLabelList)
+                label.BackColor = rood;
+            foreach (Label label in witVoorkantLabelList)
+                label.BackColor = rood;
+            foreach (Label label in witVoorkantTextLabelList)
+                label.BackColor = rood;
         }
 
         public void colorWhite()
@@ -731,12 +737,18 @@ namespace JudoScoreboard
             this.BackColor = wit;
             voorkant.BackColor = wit;
 
-            voorkant.lblIpponRood.BackColor = wit;
-            voorkant.lblWazariRood.BackColor = wit;
-            voorkant.lblYukoRood.BackColor = wit;
-            voorkant.lblShidoRood.BackColor = wit;
-            voorkant.lblHoldingRood.BackColor = wit;
-            voorkant.lblHoldingWit.BackColor = wit;
+            foreach (Label label in roodVoorkantConfirmLabelList)
+                label.BackColor = wit;
+            foreach (Label label in roodVoorkantTextLabelList)
+                label.BackColor = wit;
+            foreach (Label label in roodVoorkantLabelList)
+                label.BackColor = wit;
+            foreach (Label label in witVoorkantConfirmLabelList)
+                label.BackColor = wit;
+            foreach (Label label in witVoorkantLabelList)
+                label.BackColor = wit;
+            foreach (Label label in witVoorkantTextLabelList)
+                label.BackColor = wit;
         }
         //event handlers
         private void lblYukoRood_Click(object sender, EventArgs e)
@@ -911,7 +923,7 @@ namespace JudoScoreboard
         //the checkbox holds knowledge of the time can be changed or not (during a match or not)
         private void cbTijd_CheckedChanged(object sender, EventArgs e)
         {
-            if(cbTijd.Checked)
+            if(cbSettings.Checked)
             {
                 timeChanging();
             }
