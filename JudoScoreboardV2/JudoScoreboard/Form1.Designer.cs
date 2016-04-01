@@ -76,6 +76,7 @@
             this.lblYukoTextRood = new System.Windows.Forms.Label();
             this.lblShidoTextRood = new System.Windows.Forms.Label();
             this.lblShidoTextWit = new System.Windows.Forms.Label();
+            this.btChangeColor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblYukoRood
@@ -535,11 +536,22 @@
             this.lblShidoTextWit.TabIndex = 43;
             this.lblShidoTextWit.Text = "Shido";
             // 
+            // btChangeColor
+            // 
+            this.btChangeColor.Location = new System.Drawing.Point(612, 421);
+            this.btChangeColor.Name = "btChangeColor";
+            this.btChangeColor.Size = new System.Drawing.Size(75, 23);
+            this.btChangeColor.TabIndex = 44;
+            this.btChangeColor.Text = "Wissel kleur";
+            this.btChangeColor.UseVisualStyleBackColor = true;
+            this.btChangeColor.Click += new System.EventHandler(this.btChangeColor_Click);
+            // 
             // mainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1406, 723);
+            this.Controls.Add(this.btChangeColor);
             this.Controls.Add(this.lblShidoTextWit);
             this.Controls.Add(this.lblShidoTextRood);
             this.Controls.Add(this.lblYukoTextRood);
@@ -641,6 +653,7 @@
         private System.Windows.Forms.Label lblYukoTextRood;
         private System.Windows.Forms.Label lblShidoTextRood;
         private System.Windows.Forms.Label lblShidoTextWit;
+        private System.Windows.Forms.Button btChangeColor;
     }
 }
 

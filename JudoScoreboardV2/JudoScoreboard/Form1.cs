@@ -279,6 +279,9 @@ namespace JudoScoreboard
             score.houdgreepWazari = System.Convert.ToInt32(tbWazari.Text);
             score.houdgreepYuko = System.Convert.ToInt32(tbYuko.Text);
 
+            //changing function
+            btChangeColor.Visible = false;
+
             //timer frontScreen
             voorkant.lblMin.Text = "0" + minutes.ToString();
             voorkant.lblSec.Text = "0" + seconds.ToString();
@@ -500,6 +503,8 @@ namespace JudoScoreboard
             lblHoldingRood.Visible = false;
             voorkant.lblHoldingRood.Visible = false;
             voorkant.lblHoldingWit.Visible = false;
+
+            btChangeColor.Visible = true;
         }
         /**
         *After changes are made you're reade for a match, you can go ahead again.
@@ -534,6 +539,8 @@ namespace JudoScoreboard
             lblHoldingWit.Visible = false;
             voorkant.lblHoldingWit.Visible = false;
             voorkant.lblHoldingRood.Visible = false;
+
+            btChangeColor.Visible = false;
         }
 
         /**
@@ -1258,6 +1265,11 @@ namespace JudoScoreboard
                 lblHoldingWit.Visible = false;
                 voorkant.lblHoldingWit.Visible = false;
             }
+        }
+
+        private void btChangeColor_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Deze functionaliteit is momenteel nog niet beschikbaar.");
         }
     }
 }
