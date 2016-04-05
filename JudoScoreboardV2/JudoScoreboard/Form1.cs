@@ -1269,7 +1269,54 @@ namespace JudoScoreboard
 
         private void btChangeColor_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Deze functionaliteit is momenteel nog niet beschikbaar.");
+            /*
+            //Pointers to hold the location of the current white position.
+            Point ipponWitLocation = lblIpponWit.Location;
+            Point wazariWitLocation = lblWazariWit.Location;
+            Point yukoWitLocation = lblYukoWit.Location;
+            Point shidoWitLocation = lblShidoWit.Location;
+
+            Point btIpponWitLocation = btIpponWit.Location;
+            Point btWazariWitLocation = btWazariWit.Location;
+            Point btYukoWitLocation = btYukoWit.Location;
+            Point btShidoWitLocation = btShidoWit.Location;
+
+            Point holdingWitLocation = lblHoldingWit.Location;
+            Point holdConfirmWit1Location = lblConfirmWit1.Location;
+            Point holdConfirmWit2Location = lblConfirmWit2.Location;
+            Point holdConfirmWit3Location = lblConfirmWit3.Location;
+
+            //change location of scores
+            lblIpponWit.Location = lblIpponRood.Location;
+            lblIpponRood.Location = ipponWitLocation;
+            lblWazariWit.Location = lblWazariRood.Location;
+            lblWazariRood.Location = wazariWitLocation;
+            lblYukoWit.Location = lblYukoRood.Location;
+            lblYukoRood.Location = yukoWitLocation;
+            lblShidoWit.Location = lblShidoRood.Location;
+            lblShidoRood.Location = shidoWitLocation;
+
+            //change location of buttons
+            btIpponWit.Location = btIpponRood.Location;
+            btIpponRood.Location = btIpponWitLocation;
+            btWazariWit.Location = btWazariRood.Location;
+            btWazariRood.Location = btWazariWitLocation;
+            btYukoWit.Location = btYukoRood.Location;
+            btYukoRood.Location = btYukoWitLocation;
+            btShidoWit.Location = btShidoRood.Location;
+            btShidoRood.Location = btShidoWitLocation;
+
+            //change location of invisible holdingtimer and confirms
+            lblHoldingWit.Location = lblHoldingRood.Location;
+            lblHoldingRood.Location = holdingWitLocation;
+            lblConfirmWit1.Location = lblConfirmRood1.Location;
+            lblConfirmRood1.Location = holdConfirmWit1Location;
+            lblConfirmWit2.Location = lblConfirmRood2.Location;
+            lblConfirmRood2.Location = holdConfirmWit2Location;
+            lblConfirmWit3.Location = lblConfirmRood3.Location;
+            lblConfirmRood3.Location = holdConfirmWit3Location; */
+
+            MessageBox.Show("Deze functionaliteit is nog niet in gebruik.");
         }
 
         private void lblWazariTextRood_Click(object sender, EventArgs e)
