@@ -1271,5 +1271,15 @@ namespace JudoScoreboard
         {
             MessageBox.Show("Deze functionaliteit is momenteel nog niet beschikbaar.");
         }
+
+        private void lblWazariTextRood_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblIpponTextRood_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

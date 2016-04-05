@@ -84,7 +84,7 @@
             this.lblYukoRood.AutoSize = true;
             this.lblYukoRood.BackColor = System.Drawing.Color.FloralWhite;
             this.lblYukoRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYukoRood.Location = new System.Drawing.Point(111, 52);
+            this.lblYukoRood.Location = new System.Drawing.Point(66, 53);
             this.lblYukoRood.Name = "lblYukoRood";
             this.lblYukoRood.Size = new System.Drawing.Size(13, 13);
             this.lblYukoRood.TabIndex = 0;
@@ -94,7 +94,7 @@
             // lblYukoWit
             // 
             this.lblYukoWit.AutoSize = true;
-            this.lblYukoWit.Location = new System.Drawing.Point(872, 52);
+            this.lblYukoWit.Location = new System.Drawing.Point(575, 53);
             this.lblYukoWit.Name = "lblYukoWit";
             this.lblYukoWit.Size = new System.Drawing.Size(13, 13);
             this.lblYukoWit.TabIndex = 1;
@@ -106,7 +106,7 @@
             this.lblWazariRood.AutoSize = true;
             this.lblWazariRood.BackColor = System.Drawing.Color.FloralWhite;
             this.lblWazariRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWazariRood.Location = new System.Drawing.Point(278, 52);
+            this.lblWazariRood.Location = new System.Drawing.Point(175, 53);
             this.lblWazariRood.Name = "lblWazariRood";
             this.lblWazariRood.Size = new System.Drawing.Size(13, 13);
             this.lblWazariRood.TabIndex = 2;
@@ -118,7 +118,7 @@
             this.lblIpponRood.AutoSize = true;
             this.lblIpponRood.BackColor = System.Drawing.Color.FloralWhite;
             this.lblIpponRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIpponRood.Location = new System.Drawing.Point(457, 52);
+            this.lblIpponRood.Location = new System.Drawing.Point(274, 53);
             this.lblIpponRood.Name = "lblIpponRood";
             this.lblIpponRood.Size = new System.Drawing.Size(13, 13);
             this.lblIpponRood.TabIndex = 3;
@@ -128,7 +128,7 @@
             // lblMin
             // 
             this.lblMin.AutoSize = true;
-            this.lblMin.Location = new System.Drawing.Point(507, 536);
+            this.lblMin.Location = new System.Drawing.Point(335, 540);
             this.lblMin.Name = "lblMin";
             this.lblMin.Size = new System.Drawing.Size(19, 13);
             this.lblMin.TabIndex = 4;
@@ -143,7 +143,7 @@
             // lblTimeSeperate
             // 
             this.lblTimeSeperate.AutoSize = true;
-            this.lblTimeSeperate.Location = new System.Drawing.Point(605, 536);
+            this.lblTimeSeperate.Location = new System.Drawing.Point(433, 540);
             this.lblTimeSeperate.Name = "lblTimeSeperate";
             this.lblTimeSeperate.Size = new System.Drawing.Size(10, 13);
             this.lblTimeSeperate.TabIndex = 5;
@@ -153,7 +153,7 @@
             // lblSec
             // 
             this.lblSec.AutoSize = true;
-            this.lblSec.Location = new System.Drawing.Point(651, 536);
+            this.lblSec.Location = new System.Drawing.Point(479, 540);
             this.lblSec.Name = "lblSec";
             this.lblSec.Size = new System.Drawing.Size(19, 13);
             this.lblSec.TabIndex = 6;
@@ -165,7 +165,7 @@
             this.lblShidoRood.AutoSize = true;
             this.lblShidoRood.BackColor = System.Drawing.Color.FloralWhite;
             this.lblShidoRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShidoRood.Location = new System.Drawing.Point(111, 337);
+            this.lblShidoRood.Location = new System.Drawing.Point(66, 271);
             this.lblShidoRood.Name = "lblShidoRood";
             this.lblShidoRood.Size = new System.Drawing.Size(13, 13);
             this.lblShidoRood.TabIndex = 7;
@@ -174,7 +174,7 @@
             // 
             // tbMin
             // 
-            this.tbMin.Location = new System.Drawing.Point(612, 180);
+            this.tbMin.Location = new System.Drawing.Point(406, 181);
             this.tbMin.Name = "tbMin";
             this.tbMin.Size = new System.Drawing.Size(100, 20);
             this.tbMin.TabIndex = 8;
@@ -182,7 +182,7 @@
             // 
             // tbSec
             // 
-            this.tbSec.Location = new System.Drawing.Point(612, 244);
+            this.tbSec.Location = new System.Drawing.Point(406, 245);
             this.tbSec.Name = "tbSec";
             this.tbSec.Size = new System.Drawing.Size(100, 20);
             this.tbSec.TabIndex = 9;
@@ -190,7 +190,7 @@
             // 
             // btTime
             // 
-            this.btTime.Location = new System.Drawing.Point(612, 349);
+            this.btTime.Location = new System.Drawing.Point(406, 350);
             this.btTime.Name = "btTime";
             this.btTime.Size = new System.Drawing.Size(75, 23);
             this.btTime.TabIndex = 10;
@@ -201,7 +201,7 @@
             // cbSettings
             // 
             this.cbSettings.AutoSize = true;
-            this.cbSettings.Location = new System.Drawing.Point(612, 87);
+            this.cbSettings.Location = new System.Drawing.Point(406, 88);
             this.cbSettings.Name = "cbSettings";
             this.cbSettings.Size = new System.Drawing.Size(109, 17);
             this.cbSettings.TabIndex = 11;
@@ -212,7 +212,7 @@
             // lblWazariWit
             // 
             this.lblWazariWit.AutoSize = true;
-            this.lblWazariWit.Location = new System.Drawing.Point(1080, 52);
+            this.lblWazariWit.Location = new System.Drawing.Point(685, 53);
             this.lblWazariWit.Name = "lblWazariWit";
             this.lblWazariWit.Size = new System.Drawing.Size(13, 13);
             this.lblWazariWit.TabIndex = 12;
@@ -222,7 +222,7 @@
             // lblIpponWit
             // 
             this.lblIpponWit.AutoSize = true;
-            this.lblIpponWit.Location = new System.Drawing.Point(1263, 52);
+            this.lblIpponWit.Location = new System.Drawing.Point(768, 53);
             this.lblIpponWit.Name = "lblIpponWit";
             this.lblIpponWit.Size = new System.Drawing.Size(13, 13);
             this.lblIpponWit.TabIndex = 13;
@@ -232,7 +232,7 @@
             // lblShidoWit
             // 
             this.lblShidoWit.AutoSize = true;
-            this.lblShidoWit.Location = new System.Drawing.Point(1263, 337);
+            this.lblShidoWit.Location = new System.Drawing.Point(768, 271);
             this.lblShidoWit.Name = "lblShidoWit";
             this.lblShidoWit.Size = new System.Drawing.Size(13, 13);
             this.lblShidoWit.TabIndex = 14;
@@ -241,7 +241,7 @@
             // 
             // btRestart
             // 
-            this.btRestart.Location = new System.Drawing.Point(612, 42);
+            this.btRestart.Location = new System.Drawing.Point(406, 43);
             this.btRestart.Name = "btRestart";
             this.btRestart.Size = new System.Drawing.Size(75, 23);
             this.btRestart.TabIndex = 15;
@@ -259,7 +259,7 @@
             this.lblHoldingRood.AutoSize = true;
             this.lblHoldingRood.BackColor = System.Drawing.Color.FloralWhite;
             this.lblHoldingRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoldingRood.Location = new System.Drawing.Point(424, 444);
+            this.lblHoldingRood.Location = new System.Drawing.Point(175, 432);
             this.lblHoldingRood.Name = "lblHoldingRood";
             this.lblHoldingRood.Size = new System.Drawing.Size(13, 13);
             this.lblHoldingRood.TabIndex = 16;
@@ -271,7 +271,7 @@
             this.lblHoldingWit.AutoSize = true;
             this.lblHoldingWit.BackColor = System.Drawing.Color.FloralWhite;
             this.lblHoldingWit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoldingWit.Location = new System.Drawing.Point(891, 444);
+            this.lblHoldingWit.Location = new System.Drawing.Point(685, 432);
             this.lblHoldingWit.Name = "lblHoldingWit";
             this.lblHoldingWit.Size = new System.Drawing.Size(13, 13);
             this.lblHoldingWit.TabIndex = 17;
@@ -283,7 +283,7 @@
             this.lblConfirmRood1.AutoSize = true;
             this.lblConfirmRood1.BackColor = System.Drawing.Color.FloralWhite;
             this.lblConfirmRood1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmRood1.Location = new System.Drawing.Point(111, 636);
+            this.lblConfirmRood1.Location = new System.Drawing.Point(66, 637);
             this.lblConfirmRood1.Name = "lblConfirmRood1";
             this.lblConfirmRood1.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmRood1.TabIndex = 18;
@@ -295,7 +295,7 @@
             this.lblConfirmRood2.AutoSize = true;
             this.lblConfirmRood2.BackColor = System.Drawing.Color.FloralWhite;
             this.lblConfirmRood2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmRood2.Location = new System.Drawing.Point(209, 636);
+            this.lblConfirmRood2.Location = new System.Drawing.Point(164, 637);
             this.lblConfirmRood2.Name = "lblConfirmRood2";
             this.lblConfirmRood2.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmRood2.TabIndex = 19;
@@ -307,7 +307,7 @@
             this.lblConfirmRood3.AutoSize = true;
             this.lblConfirmRood3.BackColor = System.Drawing.Color.FloralWhite;
             this.lblConfirmRood3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmRood3.Location = new System.Drawing.Point(302, 636);
+            this.lblConfirmRood3.Location = new System.Drawing.Point(257, 637);
             this.lblConfirmRood3.Name = "lblConfirmRood3";
             this.lblConfirmRood3.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmRood3.TabIndex = 20;
@@ -319,7 +319,7 @@
             this.lblConfirmWit1.AutoSize = true;
             this.lblConfirmWit1.BackColor = System.Drawing.Color.FloralWhite;
             this.lblConfirmWit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmWit1.Location = new System.Drawing.Point(891, 636);
+            this.lblConfirmWit1.Location = new System.Drawing.Point(594, 637);
             this.lblConfirmWit1.Name = "lblConfirmWit1";
             this.lblConfirmWit1.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmWit1.TabIndex = 21;
@@ -331,7 +331,7 @@
             this.lblConfirmWit2.AutoSize = true;
             this.lblConfirmWit2.BackColor = System.Drawing.Color.FloralWhite;
             this.lblConfirmWit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmWit2.Location = new System.Drawing.Point(986, 636);
+            this.lblConfirmWit2.Location = new System.Drawing.Point(689, 637);
             this.lblConfirmWit2.Name = "lblConfirmWit2";
             this.lblConfirmWit2.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmWit2.TabIndex = 22;
@@ -343,7 +343,7 @@
             this.lblConfirmWit3.AutoSize = true;
             this.lblConfirmWit3.BackColor = System.Drawing.Color.FloralWhite;
             this.lblConfirmWit3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmWit3.Location = new System.Drawing.Point(1079, 636);
+            this.lblConfirmWit3.Location = new System.Drawing.Point(782, 637);
             this.lblConfirmWit3.Name = "lblConfirmWit3";
             this.lblConfirmWit3.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmWit3.TabIndex = 23;
@@ -352,7 +352,7 @@
             // 
             // tbYuko
             // 
-            this.tbYuko.Location = new System.Drawing.Point(460, 299);
+            this.tbYuko.Location = new System.Drawing.Point(254, 300);
             this.tbYuko.Name = "tbYuko";
             this.tbYuko.Size = new System.Drawing.Size(100, 20);
             this.tbYuko.TabIndex = 24;
@@ -360,7 +360,7 @@
             // 
             // tbWazari
             // 
-            this.tbWazari.Location = new System.Drawing.Point(612, 299);
+            this.tbWazari.Location = new System.Drawing.Point(406, 300);
             this.tbWazari.Name = "tbWazari";
             this.tbWazari.Size = new System.Drawing.Size(100, 20);
             this.tbWazari.TabIndex = 25;
@@ -368,7 +368,7 @@
             // 
             // tbIppon
             // 
-            this.tbIppon.Location = new System.Drawing.Point(769, 298);
+            this.tbIppon.Location = new System.Drawing.Point(563, 299);
             this.tbIppon.Name = "tbIppon";
             this.tbIppon.Size = new System.Drawing.Size(100, 20);
             this.tbIppon.TabIndex = 26;
@@ -376,7 +376,7 @@
             // 
             // btYukoRood
             // 
-            this.btYukoRood.Location = new System.Drawing.Point(114, 140);
+            this.btYukoRood.Location = new System.Drawing.Point(56, 141);
             this.btYukoRood.Name = "btYukoRood";
             this.btYukoRood.Size = new System.Drawing.Size(75, 23);
             this.btYukoRood.TabIndex = 27;
@@ -386,7 +386,7 @@
             // 
             // btWazariRood
             // 
-            this.btWazariRood.Location = new System.Drawing.Point(281, 140);
+            this.btWazariRood.Location = new System.Drawing.Point(153, 141);
             this.btWazariRood.Name = "btWazariRood";
             this.btWazariRood.Size = new System.Drawing.Size(84, 23);
             this.btWazariRood.TabIndex = 28;
@@ -396,7 +396,7 @@
             // 
             // btIpponRood
             // 
-            this.btIpponRood.Location = new System.Drawing.Point(460, 140);
+            this.btIpponRood.Location = new System.Drawing.Point(261, 141);
             this.btIpponRood.Name = "btIpponRood";
             this.btIpponRood.Size = new System.Drawing.Size(75, 23);
             this.btIpponRood.TabIndex = 29;
@@ -406,7 +406,7 @@
             // 
             // btYukoWit
             // 
-            this.btYukoWit.Location = new System.Drawing.Point(875, 140);
+            this.btYukoWit.Location = new System.Drawing.Point(563, 141);
             this.btYukoWit.Name = "btYukoWit";
             this.btYukoWit.Size = new System.Drawing.Size(75, 23);
             this.btYukoWit.TabIndex = 30;
@@ -416,7 +416,7 @@
             // 
             // btWazariWit
             // 
-            this.btWazariWit.Location = new System.Drawing.Point(1083, 140);
+            this.btWazariWit.Location = new System.Drawing.Point(672, 141);
             this.btWazariWit.Name = "btWazariWit";
             this.btWazariWit.Size = new System.Drawing.Size(83, 23);
             this.btWazariWit.TabIndex = 31;
@@ -426,7 +426,7 @@
             // 
             // btIpponWit
             // 
-            this.btIpponWit.Location = new System.Drawing.Point(1266, 140);
+            this.btIpponWit.Location = new System.Drawing.Point(784, 141);
             this.btIpponWit.Name = "btIpponWit";
             this.btIpponWit.Size = new System.Drawing.Size(75, 23);
             this.btIpponWit.TabIndex = 32;
@@ -436,7 +436,7 @@
             // 
             // btShidoWit
             // 
-            this.btShidoWit.Location = new System.Drawing.Point(1266, 421);
+            this.btShidoWit.Location = new System.Drawing.Point(771, 359);
             this.btShidoWit.Name = "btShidoWit";
             this.btShidoWit.Size = new System.Drawing.Size(75, 23);
             this.btShidoWit.TabIndex = 33;
@@ -446,7 +446,7 @@
             // 
             // btShidoRood
             // 
-            this.btShidoRood.Location = new System.Drawing.Point(114, 421);
+            this.btShidoRood.Location = new System.Drawing.Point(56, 359);
             this.btShidoRood.Name = "btShidoRood";
             this.btShidoRood.Size = new System.Drawing.Size(75, 23);
             this.btShidoRood.TabIndex = 34;
@@ -456,7 +456,7 @@
             // 
             // btChangeHolding
             // 
-            this.btChangeHolding.Location = new System.Drawing.Point(563, 675);
+            this.btChangeHolding.Location = new System.Drawing.Point(332, 675);
             this.btChangeHolding.Name = "btChangeHolding";
             this.btChangeHolding.Size = new System.Drawing.Size(149, 23);
             this.btChangeHolding.TabIndex = 35;
@@ -467,16 +467,17 @@
             // lblIpponTextRood
             // 
             this.lblIpponTextRood.AutoSize = true;
-            this.lblIpponTextRood.Location = new System.Drawing.Point(457, 9);
+            this.lblIpponTextRood.Location = new System.Drawing.Point(258, 10);
             this.lblIpponTextRood.Name = "lblIpponTextRood";
             this.lblIpponTextRood.Size = new System.Drawing.Size(34, 13);
             this.lblIpponTextRood.TabIndex = 36;
             this.lblIpponTextRood.Text = "Ippon";
+            this.lblIpponTextRood.Click += new System.EventHandler(this.lblIpponTextRood_Click);
             // 
             // lblIpponTextWit
             // 
             this.lblIpponTextWit.AutoSize = true;
-            this.lblIpponTextWit.Location = new System.Drawing.Point(1263, 9);
+            this.lblIpponTextWit.Location = new System.Drawing.Point(768, 10);
             this.lblIpponTextWit.Name = "lblIpponTextWit";
             this.lblIpponTextWit.Size = new System.Drawing.Size(34, 13);
             this.lblIpponTextWit.TabIndex = 37;
@@ -485,7 +486,7 @@
             // lblWazariTextWit
             // 
             this.lblWazariTextWit.AutoSize = true;
-            this.lblWazariTextWit.Location = new System.Drawing.Point(1053, 9);
+            this.lblWazariTextWit.Location = new System.Drawing.Point(669, 10);
             this.lblWazariTextWit.Name = "lblWazariTextWit";
             this.lblWazariTextWit.Size = new System.Drawing.Size(40, 13);
             this.lblWazariTextWit.TabIndex = 38;
@@ -494,16 +495,17 @@
             // lblWazariTextRood
             // 
             this.lblWazariTextRood.AutoSize = true;
-            this.lblWazariTextRood.Location = new System.Drawing.Point(275, 9);
+            this.lblWazariTextRood.Location = new System.Drawing.Point(164, 10);
             this.lblWazariTextRood.Name = "lblWazariTextRood";
             this.lblWazariTextRood.Size = new System.Drawing.Size(40, 13);
             this.lblWazariTextRood.TabIndex = 39;
             this.lblWazariTextRood.Text = "Wazari";
+            this.lblWazariTextRood.Click += new System.EventHandler(this.lblWazariTextRood_Click);
             // 
             // lblYukoTextWit
             // 
             this.lblYukoTextWit.AutoSize = true;
-            this.lblYukoTextWit.Location = new System.Drawing.Point(872, 9);
+            this.lblYukoTextWit.Location = new System.Drawing.Point(575, 10);
             this.lblYukoTextWit.Name = "lblYukoTextWit";
             this.lblYukoTextWit.Size = new System.Drawing.Size(32, 13);
             this.lblYukoTextWit.TabIndex = 40;
@@ -512,7 +514,7 @@
             // lblYukoTextRood
             // 
             this.lblYukoTextRood.AutoSize = true;
-            this.lblYukoTextRood.Location = new System.Drawing.Point(111, 9);
+            this.lblYukoTextRood.Location = new System.Drawing.Point(66, 10);
             this.lblYukoTextRood.Name = "lblYukoTextRood";
             this.lblYukoTextRood.Size = new System.Drawing.Size(32, 13);
             this.lblYukoTextRood.TabIndex = 41;
@@ -521,7 +523,7 @@
             // lblShidoTextRood
             // 
             this.lblShidoTextRood.AutoSize = true;
-            this.lblShidoTextRood.Location = new System.Drawing.Point(111, 270);
+            this.lblShidoTextRood.Location = new System.Drawing.Point(66, 222);
             this.lblShidoTextRood.Name = "lblShidoTextRood";
             this.lblShidoTextRood.Size = new System.Drawing.Size(34, 13);
             this.lblShidoTextRood.TabIndex = 42;
@@ -530,7 +532,7 @@
             // lblShidoTextWit
             // 
             this.lblShidoTextWit.AutoSize = true;
-            this.lblShidoTextWit.Location = new System.Drawing.Point(1263, 270);
+            this.lblShidoTextWit.Location = new System.Drawing.Point(768, 222);
             this.lblShidoTextWit.Name = "lblShidoTextWit";
             this.lblShidoTextWit.Size = new System.Drawing.Size(34, 13);
             this.lblShidoTextWit.TabIndex = 43;
@@ -538,7 +540,7 @@
             // 
             // btChangeColor
             // 
-            this.btChangeColor.Location = new System.Drawing.Point(612, 421);
+            this.btChangeColor.Location = new System.Drawing.Point(406, 422);
             this.btChangeColor.Name = "btChangeColor";
             this.btChangeColor.Size = new System.Drawing.Size(75, 23);
             this.btChangeColor.TabIndex = 44;
