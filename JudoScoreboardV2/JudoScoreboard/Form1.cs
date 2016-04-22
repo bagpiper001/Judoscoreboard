@@ -650,8 +650,8 @@ namespace JudoScoreboard
         {
             tmrClock.Enabled = false;
             tmrHolding.Enabled = false;
-            lblHoldingWit.Enabled = false;
-            lblHoldingRood.Enabled = false;
+            lblHoldingWit.Visible = false;
+            lblHoldingRood.Visible = false;
             btChangeHolding.Visible = false;
             btRestart.Enabled = true;
             if (score.getWinnaarRood())
