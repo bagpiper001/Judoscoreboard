@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(publicScreen));
             this.lblYukoWit = new System.Windows.Forms.Label();
             this.lblYukoRood = new System.Windows.Forms.Label();
@@ -56,6 +57,9 @@
             this.lblYukoTextRood = new System.Windows.Forms.Label();
             this.lblWazariTextRood = new System.Windows.Forms.Label();
             this.lblIpponTextRood = new System.Windows.Forms.Label();
+            this.boxReclameImage = new System.Windows.Forms.PictureBox();
+            this.reclameTimer = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.boxReclameImage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblYukoWit
@@ -301,11 +305,26 @@
             this.lblIpponTextRood.TabIndex = 51;
             this.lblIpponTextRood.Text = "Ippon";
             // 
+            // boxReclameImage
+            // 
+            this.boxReclameImage.Location = new System.Drawing.Point(517, 50);
+            this.boxReclameImage.Name = "boxReclameImage";
+            this.boxReclameImage.Size = new System.Drawing.Size(578, 113);
+            this.boxReclameImage.TabIndex = 52;
+            this.boxReclameImage.TabStop = false;
+            // 
+            // reclameTimer
+            // 
+            this.reclameTimer.Enabled = true;
+            this.reclameTimer.Interval = 5000;
+            this.reclameTimer.Tick += new System.EventHandler(this.reclameTimer_Tick);
+            // 
             // publicScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1582, 811);
+            this.Controls.Add(this.boxReclameImage);
             this.Controls.Add(this.lblIpponTextRood);
             this.Controls.Add(this.lblWazariTextRood);
             this.Controls.Add(this.lblYukoTextRood);
@@ -336,7 +355,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "publicScreen";
             this.Text = "Judoscoreboard";
+            this.Load += new System.EventHandler(this.publicScreen_Load);
             this.Resize += new System.EventHandler(this.publicScreen_Resize);
+            ((System.ComponentModel.ISupportInitialize)(this.boxReclameImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,5 +392,7 @@
         public System.Windows.Forms.Label lblYukoTextRood;
         public System.Windows.Forms.Label lblWazariTextRood;
         public System.Windows.Forms.Label lblIpponTextRood;
+        private System.Windows.Forms.PictureBox boxReclameImage;
+        private System.Windows.Forms.Timer reclameTimer;
     }
 }

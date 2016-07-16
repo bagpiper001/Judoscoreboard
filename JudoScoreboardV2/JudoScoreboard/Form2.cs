@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace JudoScoreboard
 {
@@ -19,6 +20,12 @@ namespace JudoScoreboard
         public List<Control> witLabelList = new List<Control>();
         public List<Control> buttonList = new List<Control>();
         public List<Control> timerLabelList = new List<Control>();
+
+        DirectoryInfo dInfo = new DirectoryInfo("images");
+        List<Image> reclameList;
+
+        int timerTijd = 0;
+       
         public publicScreen()
         {
             InitializeComponent();
@@ -31,6 +38,13 @@ namespace JudoScoreboard
                 if (control.GetType() == typeof(Button))
                     buttonList.Add((Button)control);
             }
+
+            FileInfo[] pngFiles = dInfo.GetFiles("*.png");
+            reclameList = new List<Image>();
+            foreach(FileInfo d in pngFiles)
+            {
+                reclameList.Add(Image.FromFile(d.FullName));
+            }
         }
 
         /**
@@ -40,6 +54,27 @@ namespace JudoScoreboard
         private void publicScreen_Resize(object sender, System.EventArgs e)
         {
 
+        }
+
+        private void publicScreen_Load(object sender, EventArgs e)
+        {
+            publicScreen_Resize(sender, e);
+            boxReclameImage.Image = reclameList[0];
+            boxReclameImage.SizeMode = PictureBoxSizeMode.Zoom;
+        }
+
+        private void reclameTimer_Tick(object sender, EventArgs e)
+        {
+            timerTijd += 1;
+            if (reclameList.Count == timerTijd)
+                timerTijd = 0;
+            try
+            {
+                boxReclameImage.Image = reclameList[timerTijd];
+            } catch(Exception exc)
+            {
+                Console.WriteLine(exc);
+            }
         }
     }
 }
