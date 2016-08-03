@@ -1,0 +1,21 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   JudoScoreboardV2/.vs/JudoScoreboardV2/v14/.suo
+#	modified:   JudoScoreboardV2/JudoScoreboard/Form2.Designer.cs
+#	modified:   JudoScoreboardV2/JudoScoreboard/bin/Debug/JudoScoreboard.exe
+#	modified:   JudoScoreboardV2/JudoScoreboard/bin/Debug/JudoScoreboard.pdb
+#	modified:   JudoScoreboardV2/JudoScoreboard/obj/Debug/JudoScoreboard.csproj.GenerateResource.Cache
+#	modified:   JudoScoreboardV2/JudoScoreboard/obj/Debug/JudoScoreboard.exe
+#	modified:   JudoScoreboardV2/JudoScoreboard/obj/Debug/JudoScoreboard.pdb
+#
+# Untracked files:
+#	JudoScoreboardV2/JudoScoreboard/bin/Debug/images/Logo_scherm_citation clean_v2.png
+#	JudoScoreboardV2/JudoScoreboard/bin/Debug/images/Logo_scherm_citation clean_v3.png
+#	JudoScoreboardV2/JudoScoreboard/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+#
+
