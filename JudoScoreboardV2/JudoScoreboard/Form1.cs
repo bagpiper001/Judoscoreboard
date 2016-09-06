@@ -26,6 +26,7 @@ namespace JudoScoreboard
 
         Font mainScreenStandardFont = new Font("Microsoft Sans Serif", 50);
         Font mainScreenKleinFont = new Font("Microsoft Sans Serif", 20);
+        Font voorkantTimerFont = new Font("Microsoft Sans Serif", 80);
 
         //Strings used for getting and setting scores.
         String yuko = "yuko";
@@ -228,6 +229,15 @@ namespace JudoScoreboard
 
                 foreach (Label label in timerLabelList)
                     label.Font = mainScreenStandardFont;
+
+                List<Control> voorkantTimerLabelList = new List<Control>();
+                voorkantTimerLabelList.Add(voorkant.lblSec);
+                voorkantTimerLabelList.Add(voorkant.lblMin);
+                voorkantTimerLabelList.Add(voorkant.lblTimeSeperate);
+                foreach(Label label in voorkantTimerLabelList)
+                {
+                    label.Font = voorkantTimerFont;
+                }
             }
         }
         /**

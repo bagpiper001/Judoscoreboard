@@ -76,5 +76,10 @@ namespace JudoScoreboard
                 Console.WriteLine(exc);
             }
         }
+
+        private void lblIpponWit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

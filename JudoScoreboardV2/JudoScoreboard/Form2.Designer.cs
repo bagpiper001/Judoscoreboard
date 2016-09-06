@@ -119,7 +119,7 @@
             // lblMin
             // 
             this.lblMin.AutoSize = true;
-            this.lblMin.Location = new System.Drawing.Point(730, 826);
+            this.lblMin.Location = new System.Drawing.Point(679, 826);
             this.lblMin.Name = "lblMin";
             this.lblMin.Size = new System.Drawing.Size(19, 13);
             this.lblMin.TabIndex = 7;
@@ -151,6 +151,7 @@
             this.lblIpponWit.Size = new System.Drawing.Size(13, 13);
             this.lblIpponWit.TabIndex = 12;
             this.lblIpponWit.Text = "0";
+            this.lblIpponWit.Click += new System.EventHandler(this.lblIpponWit_Click);
             // 
             // lblShidoWit
             // 
@@ -307,7 +308,7 @@
             // 
             // boxReclameImage
             // 
-            this.boxReclameImage.Location = new System.Drawing.Point(498, 12);
+            this.boxReclameImage.Location = new System.Drawing.Point(613, 12);
             this.boxReclameImage.Name = "boxReclameImage";
             this.boxReclameImage.Size = new System.Drawing.Size(503, 303);
             this.boxReclameImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
