@@ -720,6 +720,8 @@ namespace JudoScoreboard
                 label.BackColor = rood;
             lblHoldingWit.BackColor = rood;
             lblHoldingRood.BackColor = rood;
+            voorkant.lblHoldingRood.BackColor = rood;
+            voorkant.lblHoldingWit.BackColor = rood;
             this.BackColor = rood;
             voorkant.BackColor = rood;
 
@@ -751,6 +753,8 @@ namespace JudoScoreboard
                 label.BackColor = wit;
             lblHoldingRood.BackColor = wit;
             lblHoldingWit.BackColor = wit;
+            voorkant.lblHoldingWit.BackColor = wit;
+            voorkant.lblHoldingRood.BackColor = wit;
             this.BackColor = wit;
             voorkant.BackColor = wit;
 
