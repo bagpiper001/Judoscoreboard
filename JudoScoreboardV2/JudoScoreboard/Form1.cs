@@ -15,6 +15,7 @@ namespace JudoScoreboard
     {
         publicScreen voorkant = new publicScreen();
         Score score = new Score();
+        ColorHandler colorHandler = new ColorHandler();
 
         //Font initiation
         Font standardFont = new Font("Microsoft Sans Serif", 100);
@@ -51,6 +52,7 @@ namespace JudoScoreboard
         public string[] timerLabels = { "lblMin", "lblTimeSeperate", "lblSec" };
 
         public List<Control> buttonList = new List<Control>();
+
         public List<Control> witLabelList = new List<Control>();
         public List<Control> witTextLabelList = new List<Control>();
         public List<Control> witConfirmLabelList = new List<Control>();
@@ -103,6 +105,7 @@ namespace JudoScoreboard
                     buttonList.Add((Button)control);
                 if(control.GetType() == typeof(Label))
                 {
+                    colorHandler.assignList(control);
                     if(witLabels.Contains(control.Name.ToString()))
                         witLabelList.Add((Label)control);
                     if (witConfirmLabels.Contains(control.Name.ToString()))
@@ -123,6 +126,7 @@ namespace JudoScoreboard
             {
                 if(control.GetType() == typeof(Label))
                 {
+                    colorHandler.assignVoorkantList(control);
                     if (timerLabels.Contains(control.Name.ToString()))
                         timerLabelList.Add((Label)control);
                     if (witLabels.Contains(control.Name.ToString()))
@@ -585,6 +589,18 @@ namespace JudoScoreboard
         {
             this.BackColor = grijs;
             voorkant.BackColor = grijs;
+            //colorhandler has to handle this.
+            /*foreach(Control control in this.Controls)
+            {
+                if (control.GetType() == typeof(Label))
+                    control.BackColor = colorHandler.getDefaultColor(control);
+            }
+
+            foreach(Control control in voorkant.Controls)
+            {
+                if (control.GetType() == typeof(Label))
+                    control.BackColor = colorHandler.getDefaultColor(control);
+            }*/
 
             foreach (Label label in roodLabelList)
                 label.BackColor = rood;
