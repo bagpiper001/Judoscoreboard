@@ -171,7 +171,7 @@
             // lblIpponWit
             // 
             this.lblIpponWit.AutoSize = true;
-            this.lblIpponWit.Location = new System.Drawing.Point(768, 53);
+            this.lblIpponWit.Location = new System.Drawing.Point(781, 53);
             this.lblIpponWit.Name = "lblIpponWit";
             this.lblIpponWit.Size = new System.Drawing.Size(13, 13);
             this.lblIpponWit.TabIndex = 13;
@@ -414,7 +414,7 @@
             // 
             // btWazariWit
             // 
-            this.btWazariWit.Location = new System.Drawing.Point(672, 141);
+            this.btWazariWit.Location = new System.Drawing.Point(615, 141);
             this.btWazariWit.Name = "btWazariWit";
             this.btWazariWit.Size = new System.Drawing.Size(83, 23);
             this.btWazariWit.TabIndex = 31;
@@ -425,7 +425,7 @@
             // lblWazariTextWit
             // 
             this.lblWazariTextWit.AutoSize = true;
-            this.lblWazariTextWit.Location = new System.Drawing.Point(669, 10);
+            this.lblWazariTextWit.Location = new System.Drawing.Point(623, 10);
             this.lblWazariTextWit.Name = "lblWazariTextWit";
             this.lblWazariTextWit.Size = new System.Drawing.Size(40, 13);
             this.lblWazariTextWit.TabIndex = 38;
@@ -434,7 +434,7 @@
             // lblWazariWit
             // 
             this.lblWazariWit.AutoSize = true;
-            this.lblWazariWit.Location = new System.Drawing.Point(685, 53);
+            this.lblWazariWit.Location = new System.Drawing.Point(623, 53);
             this.lblWazariWit.Name = "lblWazariWit";
             this.lblWazariWit.Size = new System.Drawing.Size(13, 13);
             this.lblWazariWit.TabIndex = 12;
@@ -444,7 +444,7 @@
             // lblWazariTextRood
             // 
             this.lblWazariTextRood.AutoSize = true;
-            this.lblWazariTextRood.Location = new System.Drawing.Point(164, 10);
+            this.lblWazariTextRood.Location = new System.Drawing.Point(66, 10);
             this.lblWazariTextRood.Name = "lblWazariTextRood";
             this.lblWazariTextRood.Size = new System.Drawing.Size(40, 13);
             this.lblWazariTextRood.TabIndex = 39;
@@ -456,7 +456,7 @@
             this.lblWazariRood.AutoSize = true;
             this.lblWazariRood.BackColor = System.Drawing.Color.FloralWhite;
             this.lblWazariRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWazariRood.Location = new System.Drawing.Point(175, 53);
+            this.lblWazariRood.Location = new System.Drawing.Point(66, 53);
             this.lblWazariRood.Name = "lblWazariRood";
             this.lblWazariRood.Size = new System.Drawing.Size(13, 13);
             this.lblWazariRood.TabIndex = 2;
@@ -465,7 +465,7 @@
             // 
             // btWazariRood
             // 
-            this.btWazariRood.Location = new System.Drawing.Point(153, 141);
+            this.btWazariRood.Location = new System.Drawing.Point(69, 141);
             this.btWazariRood.Name = "btWazariRood";
             this.btWazariRood.Size = new System.Drawing.Size(84, 23);
             this.btWazariRood.TabIndex = 28;
