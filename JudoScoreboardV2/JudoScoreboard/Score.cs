@@ -14,13 +14,11 @@ namespace JudoScoreboard
 {
     class Score
     {
-        int yukorood;
         int wazarirood;
         int ipponrood;
         int shidorood;
         public int holdingRood;
 
-        int yukowit;
         int wazariwit;
         int ipponwit;
         int shidowit;
@@ -40,20 +38,17 @@ namespace JudoScoreboard
         public int confirmWit2;
         public int confirmWit3;
 
-        public int houdgreepYuko = 10;
         public int houdgreepWazari = 15;
         public int houdgreepIppon = 20;
 
         //default values for the scores.
         public void setDefault()
         {
-            yukorood = 0;
             wazarirood = 0;
             ipponrood = 0;
             shidorood = 0;
             holdingRood = 0;
 
-            yukowit = 0;
             wazariwit = 0;
             ipponwit = 0;
             shidowit = 0;
@@ -72,8 +67,6 @@ namespace JudoScoreboard
         {
             switch(score)
             {
-                case "yuko":
-                    return yukorood;
                 case "wazari":
                     return wazarirood;
                 case "ippon":
@@ -91,8 +84,6 @@ namespace JudoScoreboard
         {
             switch (score)
             {
-                case "yuko":
-                    return yukowit;
                 case "wazari":
                     return wazariwit;
                 case "ippon":
@@ -108,37 +99,6 @@ namespace JudoScoreboard
         *@variable add => if true, score will be added, if not, score will be removed if above 0.
         *@variable color => String given with color, red will update red, white will update white.
         */
-        public void setYuko(bool add, String color)
-        {
-            if(color == rood)
-            {
-                if (add)
-                {
-                    yukorood += 1;
-                }
-                else
-                {
-                    if (yukorood > 0)
-                    {
-                        yukorood -= 1;
-                    }
-                }
-            }
-            else
-            {
-                if(add)
-                {
-                    yukowit += 1;
-                }
-                else
-                {
-                    if(yukowit > 0)
-                    {
-                        yukowit -= 1;
-                    }
-                }
-            }
-        }
 
         public void setWazari(bool add, String color)
         {
@@ -240,10 +200,6 @@ namespace JudoScoreboard
         //During a match, there can be a winner at certain times, these methods will decide if so.
         public bool getWinnaarRood()
         {
-            if(wazarirood >= 2)
-            {
-                return true;
-            }
             if(ipponrood >= 1)
             {
                 return true;
@@ -257,10 +213,6 @@ namespace JudoScoreboard
 
         public bool getWinnaarWit()
         {
-            if(wazariwit >= 2)
-            {
-                return true;
-            }
             if(ipponwit >= 1)
             {
                 return true;
@@ -276,7 +228,7 @@ namespace JudoScoreboard
         //In the end there will always be a winner, or a draw.
         public String berekenWinnaar()
         {
-            if(wazarirood > wazariwit)
+            if (wazarirood > wazariwit)
             {
                 //rood
                 winnaar = rood;
@@ -284,7 +236,7 @@ namespace JudoScoreboard
             }
             else
             {
-                if(wazariwit > wazarirood)
+                if (wazariwit > wazarirood)
                 {
                     //wit
                     winnaar = wit;
@@ -292,48 +244,31 @@ namespace JudoScoreboard
                 }
                 else
                 {
-                    if(yukorood > yukowit)
+                    if (shidorood > shidowit)
                     {
-                        //rood
-                        winnaar = rood;
-                        return rood + " wint met Yuko en krijgt 5 punten.";
+                        //wit
+                        winnaar = wit;
+                        return wit + " wint op shido's en krijgt 1 punt.";
                     }
                     else
                     {
-                        if(yukowit > yukorood)
+                        if (shidowit > shidorood)
                         {
-                            //wit
-                            winnaar = wit;
-                            return wit + " wint met Yuko en krijgt 5 punten.";
+                            //rood
+                            winnaar = rood;
+                            return rood + " wint op shido's en krijgt 1 punt.";
                         }
                         else
                         {
-                            if(shidorood > shidowit)
-                            {
-                                //wit
-                                winnaar = wit;
-                                return wit + " wint op shido's en krijgt 1 punt.";
-                            }
-                            else
-                            {
-                                if(shidowit > shidorood)
-                                {
-                                    //rood
-                                    winnaar = rood;
-                                    return rood + " wint op shido's en krijgt 1 punt.";
-                                }
-                                else
-                                {
-                                    //gelijk
-                                    winnaar = gelijk;
-                                    return "De score is gelijk, de winnaar wordt aangewezen door de scheidsrechter en krijgt 1 punt, of er komt een Golden Score.";
-                                }
-                            }
+                            //gelijk
+                            winnaar = gelijk;
+                            return "De score is gelijk, de winnaar wordt aangewezen door de scheidsrechter en krijgt 1 punt, of er komt een Golden Score.";
                         }
                     }
                 }
             }
         }
+   
 
         /**
         *Method to confirm scores of holding, needs to be given by referee.
@@ -343,86 +278,46 @@ namespace JudoScoreboard
         {
             if(nr == 1)
             {
-                if(confirmRood1 < houdgreepYuko)
+
+                if(confirmRood1 >= houdgreepWazari)
                 {
+                    setWazari(true, rood);
                     confirmRood1 = 0;
                     return false;
-                }
-                else
+                } else
                 {
-                    if(confirmRood1 < houdgreepWazari)
-                    {
-                        setYuko(true, rood);
-                        confirmRood1 = 0;
-                        return false;
-                    }
-                    else
-                    {
-                        setWazari(true, rood);
-                        confirmRood1 = 0;
-                        if (getWinnaarRood())
-                        {
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
+                    return false;
                 }
+                
             }
             else
             {
                 if(nr == 2)
                 {
-                    if(confirmRood2 < houdgreepYuko)
-                    {
+              
+                    if(confirmRood2 >= houdgreepWazari)
+                    {     
+                        setWazari(true, rood);
                         confirmRood2 = 0;
                         return false;
-                    }
-                    else
+                    } else
                     {
-                        if(confirmRood2 < houdgreepWazari)
-                        {
-                            setYuko(true, rood);
-                            confirmRood2 = 0;
-                            return false;
-                        }
-                        else
-                        {
-                            setWazari(true, rood);
-                            confirmRood2 = 0;
-                            if (getWinnaarRood())
-                                return true;
-                            else
-                                return false;
-                        }
+                        return false;
                     }
+                    
                 }
                 else
                 {
-                    if(confirmRood3 < houdgreepYuko)
+                    if(confirmRood3 >= houdgreepWazari)
                     {
+                        setWazari(true, rood);
                         confirmRood3 = 0;
                         return false;
-                    }
-                    else
+                    } else
                     {
-                        if(confirmRood3 < houdgreepWazari)
-                        {
-                            setYuko(true, rood);
-                            confirmRood3 = 0;
-                            return false;
-                        }
-                        else
-                        {
-                            setWazari(true, rood);
-                            confirmRood3 = 0;
-                            if (getWinnaarRood())
-                                return true;
-                            else
-                                return false;
-
-                        }
+                        return false;
                     }
+                    
                 }
             }
         }
@@ -431,83 +326,42 @@ namespace JudoScoreboard
         {
             if(nr == 1)
             {
-                if(confirmWit1 < houdgreepYuko)
+                if(confirmWit1 >= houdgreepWazari)
                 {
+                    setWazari(true, wit);
                     confirmWit1 = 0;
                     return false;
-                }
-                else
+                } else
                 {
-                    if(confirmWit1 < houdgreepWazari)
-                    {
-                        setYuko(true, wit);
-                        confirmWit1 = 0;
-                        return false;
-                    }
-                    else
-                    {
-                        setWazari(true, wit);
-                        confirmWit1 = 0;
-                        if (getWinnaarWit())
-                            return true;
-                        else
-                            return false;
-
-                    }
+                    return false;
                 }
+                
             }
             else
             {
                 if(nr == 2)
                 {
-                    if(confirmWit2 < houdgreepYuko)
+                    if(confirmWit2 >= houdgreepWazari)
                     {
+                        setWazari(true, wit);
                         confirmWit2 = 0;
                         return false;
-                    }
-                    else
+                    } else
                     {
-                        if(confirmWit2 < houdgreepWazari)
-                        {
-                            setYuko(true, wit);
-                            confirmWit2 = 0;
-                            return false;
-                        }
-                        else
-                        {
-                            setWazari(true, wit);
-                            confirmWit2 = 0;
-                            if (getWinnaarWit())
-                                return true;
-                            else
-                                return false;
-                        }
+                        return false;
                     }
+                    
                 }
                 else
                 {
-                    if(confirmWit3 < houdgreepYuko)
+                    if(confirmWit3 >= houdgreepWazari)
                     {
+                        setWazari(true, wit);
                         confirmWit3 = 0;
                         return false;
-                    }
-                    else
+                    } else
                     {
-                        if(confirmWit3 < houdgreepWazari)
-                        {
-                            setYuko(true, wit);
-                            confirmWit3 = 0;
-                            return false;
-                        }
-                        else
-                        {
-                            setWazari(true, wit);
-                            confirmWit3 = 0;
-                            if (getWinnaarWit())
-                                return true;
-                            else
-                                return false;
-                        }
+                        return false;
                     }
                 }
             }

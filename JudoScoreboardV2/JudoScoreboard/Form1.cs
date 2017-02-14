@@ -29,7 +29,6 @@ namespace JudoScoreboard
         Font voorkantTimerFont = new Font("Microsoft Sans Serif", 80);
 
         //Strings used for getting and setting scores.
-        String yuko = "yuko";
         String wazari = "wazari";
         String ippon = "ippon";
         String shido = "shido";
@@ -42,11 +41,11 @@ namespace JudoScoreboard
         public bool paused;
 
         //for dynamic scaling
-        public string[] witLabels = {"lblYukoWit", "lblWazariWit", "lblIpponWit",  "lblShidoWit" };
-        public string[] witTextLabels = { "lblYukoTextWit", "lblWazariTextWit", "lblIpponTextWit", "lblShidoTextWit" };
+        public string[] witLabels = { "lblWazariWit", "lblIpponWit",  "lblShidoWit" };
+        public string[] witTextLabels = { "lblWazariTextWit", "lblIpponTextWit", "lblShidoTextWit" };
         public string[] witConfirmLabels = { "lblConfirmWit1", "lblConfirmWit2", "lblConfirmWit3" };
-        public string[] roodLabels = { "lblYukoRood", "lblWazariRood", "lblIpponRood",  "lblShidoRood" };
-        public string[] roodTextLabels = {"lblYukoTextRood", "lblWazariTextRood", "lblIpponTextRood", "lblShidoTextRood" };
+        public string[] roodLabels = { "lblWazariRood", "lblIpponRood",  "lblShidoRood" };
+        public string[] roodTextLabels = {"lblWazariTextRood", "lblIpponTextRood", "lblShidoTextRood" };
         public string[] roodConfirmLabels = { "lblConfirmRood1", "lblConfirmRood2", "lblConfirmRood3" };
         public string[] timerLabels = { "lblMin", "lblTimeSeperate", "lblSec" };
 
@@ -259,7 +258,6 @@ namespace JudoScoreboard
         public void initiateScreen()
         {
             //test with anchors
-            lblYukoRood.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
             //invisible timer set & holding times.
             tbSec.Visible = false;
             tbMin.Visible = false;
@@ -269,7 +267,6 @@ namespace JudoScoreboard
             voorkant.lblHoldingWit.Visible = false;
             voorkant.lblHoldingRood.Visible = false;
 
-            tbYuko.Visible = false;
             tbWazari.Visible = false;
             tbIppon.Visible = false;
 
@@ -288,7 +285,6 @@ namespace JudoScoreboard
             //initiate holding times
             score.houdgreepIppon = System.Convert.ToInt32(tbIppon.Text);
             score.houdgreepWazari = System.Convert.ToInt32(tbWazari.Text);
-            score.houdgreepYuko = System.Convert.ToInt32(tbYuko.Text);
 
             //changing function
             btChangeColor.Visible = false;
@@ -306,7 +302,6 @@ namespace JudoScoreboard
             voorkant.lblHoldingWit.Font = standardFont;
             voorkant.lblHoldingWit.BackColor = grijs;
             voorkant.lblHoldingWit.Visible = false;
-            voorkant.lblYukoWit.Text = score.getWit(yuko).ToString();
             voorkant.lblWazariWit.Text = score.getWit(wazari).ToString();
             voorkant.lblIpponWit.Text = score.getWit(ippon).ToString();
             voorkant.lblShidoWit.Text = score.getWit(shido).ToString();
@@ -319,7 +314,6 @@ namespace JudoScoreboard
             voorkant.lblHoldingRood.Font = standardFont;
             voorkant.lblHoldingRood.BackColor = grijs;
             voorkant.lblHoldingRood.Visible = false;
-            voorkant.lblYukoRood.Text = score.getRood(yuko).ToString();
             voorkant.lblWazariRood.Text = score.getRood(wazari).ToString();
             voorkant.lblIpponRood.Text = score.getRood(ippon).ToString();
             voorkant.lblShidoRood.Text = score.getRood(shido).ToString();
@@ -332,7 +326,6 @@ namespace JudoScoreboard
             lblHoldingRood.Font = mainScreenStandardFont;
             lblHoldingRood.BackColor = grijs;
 
-            lblYukoRood.Text = score.getRood(yuko).ToString();
             lblWazariRood.Text = score.getRood(wazari).ToString();
             lblIpponRood.Text = score.getRood(ippon).ToString();
             lblShidoRood.Text = score.getRood(shido).ToString();
@@ -346,7 +339,6 @@ namespace JudoScoreboard
             lblHoldingWit.Font = mainScreenStandardFont;
             lblHoldingWit.BackColor = grijs;
 
-            lblYukoWit.Text = score.getWit(yuko).ToString();
             lblWazariWit.Text = score.getWit(wazari).ToString();
             lblIpponWit.Text = score.getWit(ippon).ToString();
             lblShidoWit.Text = score.getWit(shido).ToString();
@@ -357,8 +349,6 @@ namespace JudoScoreboard
 
         public void updateScreen()
         {
-            lblYukoRood.Text = score.getRood(yuko).ToString();
-            voorkant.lblYukoRood.Text = score.getRood(yuko).ToString();
 
             lblWazariRood.Text = score.getRood(wazari).ToString();
             voorkant.lblWazariRood.Text = score.getRood(wazari).ToString();
@@ -448,9 +438,6 @@ namespace JudoScoreboard
             lblConfirmWit3.Text = score.confirmWit3.ToString();
             voorkant.lblConfirmWit3.Text = score.confirmWit3.ToString();
 
-            lblYukoWit.Text = score.getWit(yuko).ToString();
-            voorkant.lblYukoWit.Text = score.getWit(yuko).ToString();
-
             lblWazariWit.Text = score.getWit(wazari).ToString();
             voorkant.lblWazariWit.Text = score.getWit(wazari).ToString();
 
@@ -494,7 +481,6 @@ namespace JudoScoreboard
             tbMin.Visible = true;
             tbSec.Visible = true;
 
-            tbYuko.Visible = true;
             tbWazari.Visible = true;
             tbIppon.Visible = true;
 
@@ -526,7 +512,6 @@ namespace JudoScoreboard
             tbSec.Visible = false;
             tbMin.Visible = false;
 
-            tbYuko.Visible = false;
             tbWazari.Visible = false;
             tbIppon.Visible = false;
 
@@ -537,8 +522,6 @@ namespace JudoScoreboard
 
             lblShidoRood.Enabled = true;
             lblShidoWit.Enabled = true;
-            lblYukoWit.Enabled = true;
-            lblYukoRood.Enabled = true;
             lblWazariWit.Enabled = true;
             lblWazariRood.Enabled = true;
             lblIpponWit.Enabled = true;
@@ -773,12 +756,6 @@ namespace JudoScoreboard
                 label.BackColor = wit;
         }
         //event handlers
-        private void lblYukoRood_Click(object sender, EventArgs e)
-        {
-            score.setYuko(true, sRood);
-            updateScreen();
-        }
-
         private void lblWazariRood_Click(object sender, EventArgs e)
         {
             score.setWazari(true, sRood);
@@ -806,12 +783,6 @@ namespace JudoScoreboard
             {
                 eindeWedstrijd();
             }
-            updateScreen();
-        }
-
-        private void lblYukoWit_Click(object sender, EventArgs e)
-        {
-            score.setYuko(true, sWit);
             updateScreen();
         }
 
@@ -933,7 +904,6 @@ namespace JudoScoreboard
                 seconds = System.Convert.ToInt32(tbSec.Text);
                 score.houdgreepIppon = System.Convert.ToInt32(tbIppon.Text);
                 score.houdgreepWazari = System.Convert.ToInt32(tbWazari.Text);
-                score.houdgreepYuko = System.Convert.ToInt32(tbYuko.Text);
             }
             catch (Exception)
             {
@@ -1200,12 +1170,6 @@ namespace JudoScoreboard
             updateScreen();
         }
 
-        private void btYukoRood_Click(object sender, EventArgs e)
-        {
-            score.setYuko(false, sRood);
-            updateScreen();
-        }
-
         private void btWazariRood_Click(object sender, EventArgs e)
         {
             score.setWazari(false, sRood);
@@ -1217,12 +1181,6 @@ namespace JudoScoreboard
         {
             score.setIppon(false, sRood);
             resetColors();
-            updateScreen();
-        }
-
-        private void btYukoWit_Click(object sender, EventArgs e)
-        {
-            score.setYuko(false, sWit);
             updateScreen();
         }
 

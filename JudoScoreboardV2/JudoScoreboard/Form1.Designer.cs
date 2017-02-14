@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainScreen));
-            this.lblYukoRood = new System.Windows.Forms.Label();
-            this.lblYukoWit = new System.Windows.Forms.Label();
-            this.lblWazariRood = new System.Windows.Forms.Label();
             this.lblIpponRood = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.tmrClock = new System.Windows.Forms.Timer(this.components);
@@ -43,7 +40,6 @@
             this.tbSec = new System.Windows.Forms.TextBox();
             this.btTime = new System.Windows.Forms.Button();
             this.cbSettings = new System.Windows.Forms.CheckBox();
-            this.lblWazariWit = new System.Windows.Forms.Label();
             this.lblIpponWit = new System.Windows.Forms.Label();
             this.lblShidoWit = new System.Windows.Forms.Label();
             this.btRestart = new System.Windows.Forms.Button();
@@ -56,62 +52,25 @@
             this.lblConfirmWit1 = new System.Windows.Forms.Label();
             this.lblConfirmWit2 = new System.Windows.Forms.Label();
             this.lblConfirmWit3 = new System.Windows.Forms.Label();
-            this.tbYuko = new System.Windows.Forms.TextBox();
             this.tbWazari = new System.Windows.Forms.TextBox();
             this.tbIppon = new System.Windows.Forms.TextBox();
-            this.btYukoRood = new System.Windows.Forms.Button();
-            this.btWazariRood = new System.Windows.Forms.Button();
             this.btIpponRood = new System.Windows.Forms.Button();
-            this.btYukoWit = new System.Windows.Forms.Button();
-            this.btWazariWit = new System.Windows.Forms.Button();
             this.btIpponWit = new System.Windows.Forms.Button();
             this.btShidoWit = new System.Windows.Forms.Button();
             this.btShidoRood = new System.Windows.Forms.Button();
             this.btChangeHolding = new System.Windows.Forms.Button();
             this.lblIpponTextRood = new System.Windows.Forms.Label();
             this.lblIpponTextWit = new System.Windows.Forms.Label();
-            this.lblWazariTextWit = new System.Windows.Forms.Label();
-            this.lblWazariTextRood = new System.Windows.Forms.Label();
-            this.lblYukoTextWit = new System.Windows.Forms.Label();
-            this.lblYukoTextRood = new System.Windows.Forms.Label();
             this.lblShidoTextRood = new System.Windows.Forms.Label();
             this.lblShidoTextWit = new System.Windows.Forms.Label();
             this.btChangeColor = new System.Windows.Forms.Button();
+            this.btWazariWit = new System.Windows.Forms.Button();
+            this.lblWazariTextWit = new System.Windows.Forms.Label();
+            this.lblWazariWit = new System.Windows.Forms.Label();
+            this.lblWazariTextRood = new System.Windows.Forms.Label();
+            this.lblWazariRood = new System.Windows.Forms.Label();
+            this.btWazariRood = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lblYukoRood
-            // 
-            this.lblYukoRood.AutoSize = true;
-            this.lblYukoRood.BackColor = System.Drawing.Color.FloralWhite;
-            this.lblYukoRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYukoRood.Location = new System.Drawing.Point(66, 53);
-            this.lblYukoRood.Name = "lblYukoRood";
-            this.lblYukoRood.Size = new System.Drawing.Size(13, 13);
-            this.lblYukoRood.TabIndex = 0;
-            this.lblYukoRood.Text = "0";
-            this.lblYukoRood.Click += new System.EventHandler(this.lblYukoRood_Click);
-            // 
-            // lblYukoWit
-            // 
-            this.lblYukoWit.AutoSize = true;
-            this.lblYukoWit.Location = new System.Drawing.Point(575, 53);
-            this.lblYukoWit.Name = "lblYukoWit";
-            this.lblYukoWit.Size = new System.Drawing.Size(13, 13);
-            this.lblYukoWit.TabIndex = 1;
-            this.lblYukoWit.Text = "0";
-            this.lblYukoWit.Click += new System.EventHandler(this.lblYukoWit_Click);
-            // 
-            // lblWazariRood
-            // 
-            this.lblWazariRood.AutoSize = true;
-            this.lblWazariRood.BackColor = System.Drawing.Color.FloralWhite;
-            this.lblWazariRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWazariRood.Location = new System.Drawing.Point(175, 53);
-            this.lblWazariRood.Name = "lblWazariRood";
-            this.lblWazariRood.Size = new System.Drawing.Size(13, 13);
-            this.lblWazariRood.TabIndex = 2;
-            this.lblWazariRood.Text = "0";
-            this.lblWazariRood.Click += new System.EventHandler(this.lblWazariRood_Click);
             // 
             // lblIpponRood
             // 
@@ -208,16 +167,6 @@
             this.cbSettings.Text = "Wijzig instellingen";
             this.cbSettings.UseVisualStyleBackColor = true;
             this.cbSettings.CheckedChanged += new System.EventHandler(this.cbTijd_CheckedChanged);
-            // 
-            // lblWazariWit
-            // 
-            this.lblWazariWit.AutoSize = true;
-            this.lblWazariWit.Location = new System.Drawing.Point(685, 53);
-            this.lblWazariWit.Name = "lblWazariWit";
-            this.lblWazariWit.Size = new System.Drawing.Size(13, 13);
-            this.lblWazariWit.TabIndex = 12;
-            this.lblWazariWit.Text = "0";
-            this.lblWazariWit.Click += new System.EventHandler(this.lblWazariWit_Click);
             // 
             // lblIpponWit
             // 
@@ -350,14 +299,6 @@
             this.lblConfirmWit3.Text = "0";
             this.lblConfirmWit3.Click += new System.EventHandler(this.lblConfirmWit3_Click);
             // 
-            // tbYuko
-            // 
-            this.tbYuko.Location = new System.Drawing.Point(254, 300);
-            this.tbYuko.Name = "tbYuko";
-            this.tbYuko.Size = new System.Drawing.Size(100, 20);
-            this.tbYuko.TabIndex = 24;
-            this.tbYuko.Text = "10";
-            // 
             // tbWazari
             // 
             this.tbWazari.Location = new System.Drawing.Point(406, 300);
@@ -374,26 +315,6 @@
             this.tbIppon.TabIndex = 26;
             this.tbIppon.Text = "20";
             // 
-            // btYukoRood
-            // 
-            this.btYukoRood.Location = new System.Drawing.Point(56, 141);
-            this.btYukoRood.Name = "btYukoRood";
-            this.btYukoRood.Size = new System.Drawing.Size(75, 23);
-            this.btYukoRood.TabIndex = 27;
-            this.btYukoRood.Text = "Yuko teveel";
-            this.btYukoRood.UseVisualStyleBackColor = true;
-            this.btYukoRood.Click += new System.EventHandler(this.btYukoRood_Click);
-            // 
-            // btWazariRood
-            // 
-            this.btWazariRood.Location = new System.Drawing.Point(153, 141);
-            this.btWazariRood.Name = "btWazariRood";
-            this.btWazariRood.Size = new System.Drawing.Size(84, 23);
-            this.btWazariRood.TabIndex = 28;
-            this.btWazariRood.Text = "Wazari teveel";
-            this.btWazariRood.UseVisualStyleBackColor = true;
-            this.btWazariRood.Click += new System.EventHandler(this.btWazariRood_Click);
-            // 
             // btIpponRood
             // 
             this.btIpponRood.Location = new System.Drawing.Point(261, 141);
@@ -403,26 +324,6 @@
             this.btIpponRood.Text = "Ippon teveel";
             this.btIpponRood.UseVisualStyleBackColor = true;
             this.btIpponRood.Click += new System.EventHandler(this.btIpponRood_Click);
-            // 
-            // btYukoWit
-            // 
-            this.btYukoWit.Location = new System.Drawing.Point(563, 141);
-            this.btYukoWit.Name = "btYukoWit";
-            this.btYukoWit.Size = new System.Drawing.Size(75, 23);
-            this.btYukoWit.TabIndex = 30;
-            this.btYukoWit.Text = "Yuko teveel";
-            this.btYukoWit.UseVisualStyleBackColor = true;
-            this.btYukoWit.Click += new System.EventHandler(this.btYukoWit_Click);
-            // 
-            // btWazariWit
-            // 
-            this.btWazariWit.Location = new System.Drawing.Point(672, 141);
-            this.btWazariWit.Name = "btWazariWit";
-            this.btWazariWit.Size = new System.Drawing.Size(83, 23);
-            this.btWazariWit.TabIndex = 31;
-            this.btWazariWit.Text = "Wazari teveel";
-            this.btWazariWit.UseVisualStyleBackColor = true;
-            this.btWazariWit.Click += new System.EventHandler(this.btWazariWit_Click);
             // 
             // btIpponWit
             // 
@@ -483,43 +384,6 @@
             this.lblIpponTextWit.TabIndex = 37;
             this.lblIpponTextWit.Text = "Ippon";
             // 
-            // lblWazariTextWit
-            // 
-            this.lblWazariTextWit.AutoSize = true;
-            this.lblWazariTextWit.Location = new System.Drawing.Point(669, 10);
-            this.lblWazariTextWit.Name = "lblWazariTextWit";
-            this.lblWazariTextWit.Size = new System.Drawing.Size(40, 13);
-            this.lblWazariTextWit.TabIndex = 38;
-            this.lblWazariTextWit.Text = "Wazari";
-            // 
-            // lblWazariTextRood
-            // 
-            this.lblWazariTextRood.AutoSize = true;
-            this.lblWazariTextRood.Location = new System.Drawing.Point(164, 10);
-            this.lblWazariTextRood.Name = "lblWazariTextRood";
-            this.lblWazariTextRood.Size = new System.Drawing.Size(40, 13);
-            this.lblWazariTextRood.TabIndex = 39;
-            this.lblWazariTextRood.Text = "Wazari";
-            this.lblWazariTextRood.Click += new System.EventHandler(this.lblWazariTextRood_Click);
-            // 
-            // lblYukoTextWit
-            // 
-            this.lblYukoTextWit.AutoSize = true;
-            this.lblYukoTextWit.Location = new System.Drawing.Point(575, 10);
-            this.lblYukoTextWit.Name = "lblYukoTextWit";
-            this.lblYukoTextWit.Size = new System.Drawing.Size(32, 13);
-            this.lblYukoTextWit.TabIndex = 40;
-            this.lblYukoTextWit.Text = "Yuko";
-            // 
-            // lblYukoTextRood
-            // 
-            this.lblYukoTextRood.AutoSize = true;
-            this.lblYukoTextRood.Location = new System.Drawing.Point(66, 10);
-            this.lblYukoTextRood.Name = "lblYukoTextRood";
-            this.lblYukoTextRood.Size = new System.Drawing.Size(32, 13);
-            this.lblYukoTextRood.TabIndex = 41;
-            this.lblYukoTextRood.Text = "Yuko";
-            // 
             // lblShidoTextRood
             // 
             this.lblShidoTextRood.AutoSize = true;
@@ -548,6 +412,67 @@
             this.btChangeColor.UseVisualStyleBackColor = true;
             this.btChangeColor.Click += new System.EventHandler(this.btChangeColor_Click);
             // 
+            // btWazariWit
+            // 
+            this.btWazariWit.Location = new System.Drawing.Point(672, 141);
+            this.btWazariWit.Name = "btWazariWit";
+            this.btWazariWit.Size = new System.Drawing.Size(83, 23);
+            this.btWazariWit.TabIndex = 31;
+            this.btWazariWit.Text = "Wazari teveel";
+            this.btWazariWit.UseVisualStyleBackColor = true;
+            this.btWazariWit.Click += new System.EventHandler(this.btWazariWit_Click);
+            // 
+            // lblWazariTextWit
+            // 
+            this.lblWazariTextWit.AutoSize = true;
+            this.lblWazariTextWit.Location = new System.Drawing.Point(669, 10);
+            this.lblWazariTextWit.Name = "lblWazariTextWit";
+            this.lblWazariTextWit.Size = new System.Drawing.Size(40, 13);
+            this.lblWazariTextWit.TabIndex = 38;
+            this.lblWazariTextWit.Text = "Wazari";
+            // 
+            // lblWazariWit
+            // 
+            this.lblWazariWit.AutoSize = true;
+            this.lblWazariWit.Location = new System.Drawing.Point(685, 53);
+            this.lblWazariWit.Name = "lblWazariWit";
+            this.lblWazariWit.Size = new System.Drawing.Size(13, 13);
+            this.lblWazariWit.TabIndex = 12;
+            this.lblWazariWit.Text = "0";
+            this.lblWazariWit.Click += new System.EventHandler(this.lblWazariWit_Click);
+            // 
+            // lblWazariTextRood
+            // 
+            this.lblWazariTextRood.AutoSize = true;
+            this.lblWazariTextRood.Location = new System.Drawing.Point(164, 10);
+            this.lblWazariTextRood.Name = "lblWazariTextRood";
+            this.lblWazariTextRood.Size = new System.Drawing.Size(40, 13);
+            this.lblWazariTextRood.TabIndex = 39;
+            this.lblWazariTextRood.Text = "Wazari";
+            this.lblWazariTextRood.Click += new System.EventHandler(this.lblWazariTextRood_Click);
+            // 
+            // lblWazariRood
+            // 
+            this.lblWazariRood.AutoSize = true;
+            this.lblWazariRood.BackColor = System.Drawing.Color.FloralWhite;
+            this.lblWazariRood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWazariRood.Location = new System.Drawing.Point(175, 53);
+            this.lblWazariRood.Name = "lblWazariRood";
+            this.lblWazariRood.Size = new System.Drawing.Size(13, 13);
+            this.lblWazariRood.TabIndex = 2;
+            this.lblWazariRood.Text = "0";
+            this.lblWazariRood.Click += new System.EventHandler(this.lblWazariRood_Click);
+            // 
+            // btWazariRood
+            // 
+            this.btWazariRood.Location = new System.Drawing.Point(153, 141);
+            this.btWazariRood.Name = "btWazariRood";
+            this.btWazariRood.Size = new System.Drawing.Size(84, 23);
+            this.btWazariRood.TabIndex = 28;
+            this.btWazariRood.Text = "Wazari teveel";
+            this.btWazariRood.UseVisualStyleBackColor = true;
+            this.btWazariRood.Click += new System.EventHandler(this.btWazariRood_Click);
+            // 
             // mainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -556,8 +481,6 @@
             this.Controls.Add(this.btChangeColor);
             this.Controls.Add(this.lblShidoTextWit);
             this.Controls.Add(this.lblShidoTextRood);
-            this.Controls.Add(this.lblYukoTextRood);
-            this.Controls.Add(this.lblYukoTextWit);
             this.Controls.Add(this.lblWazariTextRood);
             this.Controls.Add(this.lblWazariTextWit);
             this.Controls.Add(this.lblIpponTextWit);
@@ -567,13 +490,10 @@
             this.Controls.Add(this.btShidoWit);
             this.Controls.Add(this.btIpponWit);
             this.Controls.Add(this.btWazariWit);
-            this.Controls.Add(this.btYukoWit);
             this.Controls.Add(this.btIpponRood);
             this.Controls.Add(this.btWazariRood);
-            this.Controls.Add(this.btYukoRood);
             this.Controls.Add(this.tbIppon);
             this.Controls.Add(this.tbWazari);
-            this.Controls.Add(this.tbYuko);
             this.Controls.Add(this.lblConfirmWit3);
             this.Controls.Add(this.lblConfirmWit2);
             this.Controls.Add(this.lblConfirmWit1);
@@ -596,8 +516,6 @@
             this.Controls.Add(this.lblMin);
             this.Controls.Add(this.lblIpponRood);
             this.Controls.Add(this.lblWazariRood);
-            this.Controls.Add(this.lblYukoWit);
-            this.Controls.Add(this.lblYukoRood);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainScreen";
             this.Text = "JudoScoreboard";
@@ -608,10 +526,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblYukoRood;
-        private System.Windows.Forms.Label lblYukoWit;
-        private System.Windows.Forms.Label lblWazariRood;
         private System.Windows.Forms.Label lblIpponRood;
         private System.Windows.Forms.Label lblMin;
         private System.Windows.Forms.Timer tmrClock;
@@ -622,7 +536,6 @@
         private System.Windows.Forms.TextBox tbSec;
         private System.Windows.Forms.Button btTime;
         private System.Windows.Forms.CheckBox cbSettings;
-        private System.Windows.Forms.Label lblWazariWit;
         private System.Windows.Forms.Label lblIpponWit;
         private System.Windows.Forms.Label lblShidoWit;
         private System.Windows.Forms.Button btRestart;
@@ -635,27 +548,24 @@
         private System.Windows.Forms.Label lblConfirmWit1;
         private System.Windows.Forms.Label lblConfirmWit2;
         private System.Windows.Forms.Label lblConfirmWit3;
-        private System.Windows.Forms.TextBox tbYuko;
         private System.Windows.Forms.TextBox tbWazari;
         private System.Windows.Forms.TextBox tbIppon;
-        private System.Windows.Forms.Button btYukoRood;
-        private System.Windows.Forms.Button btWazariRood;
         private System.Windows.Forms.Button btIpponRood;
-        private System.Windows.Forms.Button btYukoWit;
-        private System.Windows.Forms.Button btWazariWit;
         private System.Windows.Forms.Button btIpponWit;
         private System.Windows.Forms.Button btShidoWit;
         private System.Windows.Forms.Button btShidoRood;
         private System.Windows.Forms.Button btChangeHolding;
         private System.Windows.Forms.Label lblIpponTextRood;
         private System.Windows.Forms.Label lblIpponTextWit;
-        private System.Windows.Forms.Label lblWazariTextWit;
-        private System.Windows.Forms.Label lblWazariTextRood;
-        private System.Windows.Forms.Label lblYukoTextWit;
-        private System.Windows.Forms.Label lblYukoTextRood;
         private System.Windows.Forms.Label lblShidoTextRood;
         private System.Windows.Forms.Label lblShidoTextWit;
         private System.Windows.Forms.Button btChangeColor;
+        private System.Windows.Forms.Button btWazariWit;
+        private System.Windows.Forms.Label lblWazariTextWit;
+        private System.Windows.Forms.Label lblWazariWit;
+        private System.Windows.Forms.Label lblWazariTextRood;
+        private System.Windows.Forms.Label lblWazariRood;
+        private System.Windows.Forms.Button btWazariRood;
     }
 }
 

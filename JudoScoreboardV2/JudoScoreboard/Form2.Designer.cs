@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(publicScreen));
-            this.lblYukoWit = new System.Windows.Forms.Label();
-            this.lblYukoRood = new System.Windows.Forms.Label();
             this.lblWazariRood = new System.Windows.Forms.Label();
             this.lblIpponRood = new System.Windows.Forms.Label();
             this.lblSec = new System.Windows.Forms.Label();
@@ -51,34 +49,14 @@
             this.lblConfirmWit3 = new System.Windows.Forms.Label();
             this.lblShidoTextWit = new System.Windows.Forms.Label();
             this.lblShidoTextRood = new System.Windows.Forms.Label();
-            this.lblYukoTextWit = new System.Windows.Forms.Label();
             this.lblWazariTextWit = new System.Windows.Forms.Label();
             this.lblIpponTextWit = new System.Windows.Forms.Label();
-            this.lblYukoTextRood = new System.Windows.Forms.Label();
             this.lblWazariTextRood = new System.Windows.Forms.Label();
             this.lblIpponTextRood = new System.Windows.Forms.Label();
             this.boxReclameImage = new System.Windows.Forms.PictureBox();
             this.reclameTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.boxReclameImage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblYukoWit
-            // 
-            this.lblYukoWit.AutoSize = true;
-            this.lblYukoWit.Location = new System.Drawing.Point(228, 414);
-            this.lblYukoWit.Name = "lblYukoWit";
-            this.lblYukoWit.Size = new System.Drawing.Size(13, 13);
-            this.lblYukoWit.TabIndex = 0;
-            this.lblYukoWit.Text = "0";
-            // 
-            // lblYukoRood
-            // 
-            this.lblYukoRood.AutoSize = true;
-            this.lblYukoRood.Location = new System.Drawing.Point(989, 414);
-            this.lblYukoRood.Name = "lblYukoRood";
-            this.lblYukoRood.Size = new System.Drawing.Size(13, 13);
-            this.lblYukoRood.TabIndex = 1;
-            this.lblYukoRood.Text = "0";
             // 
             // lblWazariRood
             // 
@@ -252,15 +230,6 @@
             this.lblShidoTextRood.TabIndex = 45;
             this.lblShidoTextRood.Text = "Shido";
             // 
-            // lblYukoTextWit
-            // 
-            this.lblYukoTextWit.AutoSize = true;
-            this.lblYukoTextWit.Location = new System.Drawing.Point(228, 332);
-            this.lblYukoTextWit.Name = "lblYukoTextWit";
-            this.lblYukoTextWit.Size = new System.Drawing.Size(32, 13);
-            this.lblYukoTextWit.TabIndex = 46;
-            this.lblYukoTextWit.Text = "Yuko";
-            // 
             // lblWazariTextWit
             // 
             this.lblWazariTextWit.AutoSize = true;
@@ -278,15 +247,6 @@
             this.lblIpponTextWit.Size = new System.Drawing.Size(34, 13);
             this.lblIpponTextWit.TabIndex = 48;
             this.lblIpponTextWit.Text = "Ippon";
-            // 
-            // lblYukoTextRood
-            // 
-            this.lblYukoTextRood.AutoSize = true;
-            this.lblYukoTextRood.Location = new System.Drawing.Point(989, 332);
-            this.lblYukoTextRood.Name = "lblYukoTextRood";
-            this.lblYukoTextRood.Size = new System.Drawing.Size(32, 13);
-            this.lblYukoTextRood.TabIndex = 49;
-            this.lblYukoTextRood.Text = "Yuko";
             // 
             // lblWazariTextRood
             // 
@@ -325,14 +285,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1736, 956);
+            this.ClientSize = new System.Drawing.Size(1596, 874);
             this.Controls.Add(this.boxReclameImage);
             this.Controls.Add(this.lblIpponTextRood);
             this.Controls.Add(this.lblWazariTextRood);
-            this.Controls.Add(this.lblYukoTextRood);
             this.Controls.Add(this.lblIpponTextWit);
             this.Controls.Add(this.lblWazariTextWit);
-            this.Controls.Add(this.lblYukoTextWit);
             this.Controls.Add(this.lblShidoTextRood);
             this.Controls.Add(this.lblShidoTextWit);
             this.Controls.Add(this.lblConfirmWit3);
@@ -352,8 +310,6 @@
             this.Controls.Add(this.lblMin);
             this.Controls.Add(this.lblIpponRood);
             this.Controls.Add(this.lblWazariRood);
-            this.Controls.Add(this.lblYukoRood);
-            this.Controls.Add(this.lblYukoWit);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "publicScreen";
             this.Text = "Judoscoreboard";
@@ -366,9 +322,6 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.Label lblYukoWit;
-        public System.Windows.Forms.Label lblYukoRood;
         public System.Windows.Forms.Label lblWazariRood;
         public System.Windows.Forms.Label lblIpponRood;
         public System.Windows.Forms.Label lblSec;
@@ -388,10 +341,8 @@
         public System.Windows.Forms.Label lblConfirmWit3;
         public System.Windows.Forms.Label lblShidoTextWit;
         public System.Windows.Forms.Label lblShidoTextRood;
-        public System.Windows.Forms.Label lblYukoTextWit;
         public System.Windows.Forms.Label lblWazariTextWit;
         public System.Windows.Forms.Label lblIpponTextWit;
-        public System.Windows.Forms.Label lblYukoTextRood;
         public System.Windows.Forms.Label lblWazariTextRood;
         public System.Windows.Forms.Label lblIpponTextRood;
         private System.Windows.Forms.PictureBox boxReclameImage;
