@@ -1,6 +1,6 @@
 ﻿namespace JudoScoreboard
 {
-    partial class mainScreen
+    partial class JudoScoreboard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainScreen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JudoScoreboard));
             this.lblIpponRood = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.tmrClock = new System.Windows.Forms.Timer(this.components);
@@ -70,6 +70,7 @@
             this.lblWazariTextRood = new System.Windows.Forms.Label();
             this.lblWazariRood = new System.Windows.Forms.Label();
             this.btWazariRood = new System.Windows.Forms.Button();
+            this.btGoldenScore = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblIpponRood
@@ -404,7 +405,7 @@
             // 
             // btChangeColor
             // 
-            this.btChangeColor.Location = new System.Drawing.Point(406, 422);
+            this.btChangeColor.Location = new System.Drawing.Point(338, 422);
             this.btChangeColor.Name = "btChangeColor";
             this.btChangeColor.Size = new System.Drawing.Size(75, 23);
             this.btChangeColor.TabIndex = 44;
@@ -473,11 +474,22 @@
             this.btWazariRood.UseVisualStyleBackColor = true;
             this.btWazariRood.Click += new System.EventHandler(this.btWazariRood_Click);
             // 
-            // mainScreen
+            // btGoldenScore
+            // 
+            this.btGoldenScore.Location = new System.Drawing.Point(517, 422);
+            this.btGoldenScore.Name = "btGoldenScore";
+            this.btGoldenScore.Size = new System.Drawing.Size(90, 23);
+            this.btGoldenScore.TabIndex = 45;
+            this.btGoldenScore.Text = "Golden Score";
+            this.btGoldenScore.UseVisualStyleBackColor = true;
+            this.btGoldenScore.Click += new System.EventHandler(this.btGoldenScore_Click);
+            // 
+            // JudoScoreboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1406, 723);
+            this.Controls.Add(this.btGoldenScore);
             this.Controls.Add(this.btChangeColor);
             this.Controls.Add(this.lblShidoTextWit);
             this.Controls.Add(this.lblShidoTextRood);
@@ -517,7 +529,7 @@
             this.Controls.Add(this.lblIpponRood);
             this.Controls.Add(this.lblWazariRood);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "mainScreen";
+            this.Name = "JudoScoreboard";
             this.Text = "JudoScoreboard";
             this.Resize += new System.EventHandler(this.mainScreen_Resize);
             this.ResumeLayout(false);
@@ -566,6 +578,7 @@
         private System.Windows.Forms.Label lblWazariTextRood;
         private System.Windows.Forms.Label lblWazariRood;
         private System.Windows.Forms.Button btWazariRood;
+        private System.Windows.Forms.Button btGoldenScore;
     }
 }
 

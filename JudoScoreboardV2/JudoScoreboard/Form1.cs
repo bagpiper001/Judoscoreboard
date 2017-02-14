@@ -11,11 +11,10 @@ using System.Windows.Forms;
 namespace JudoScoreboard
 {
     
-    public partial class mainScreen : Form
+    public partial class JudoScoreboard : Form
     {
         publicScreen voorkant = new publicScreen();
         Score score = new Score();
-
         //Font initiation
         Font standardFont = new Font("Microsoft Sans Serif", 100);
         Font kleinFont = new Font("Microsoft Sans Serif", 40);
@@ -73,7 +72,7 @@ namespace JudoScoreboard
         //holding timer
         public bool isRood = false;
 
-        public mainScreen()
+        public JudoScoreboard()
         {
             
             Screen[] screens = Screen.AllScreens;
@@ -257,7 +256,6 @@ namespace JudoScoreboard
         */
         public void initiateScreen()
         {
-            //test with anchors
             //invisible timer set & holding times.
             tbSec.Visible = false;
             tbMin.Visible = false;
@@ -271,6 +269,7 @@ namespace JudoScoreboard
             tbIppon.Visible = false;
 
             btChangeHolding.Visible = false;
+            btGoldenScore.Visible = false;
 
 
             //initiate timer
@@ -502,6 +501,8 @@ namespace JudoScoreboard
             voorkant.lblHoldingWit.Visible = false;
 
             btChangeColor.Visible = true;
+
+            btGoldenScore.Visible = true;
         }
         /**
         *After changes are made you're reade for a match, you can go ahead again.
@@ -535,6 +536,7 @@ namespace JudoScoreboard
             voorkant.lblHoldingRood.Visible = false;
 
             btChangeColor.Visible = false;
+            btGoldenScore.Visible = false;
         }
 
         /**
@@ -547,8 +549,6 @@ namespace JudoScoreboard
 
             lblHoldingWit.Visible = true;
             lblHoldingRood.Visible = true;
-           
-
         }
 
         public void timeIsPause()
@@ -683,7 +683,6 @@ namespace JudoScoreboard
                                 MessageBox.Show(score.berekenWinnaar());
                             }
                         }
-                        
                     }
                 }
             }
@@ -1300,6 +1299,11 @@ namespace JudoScoreboard
         private void lblIpponTextRood_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btGoldenScore_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("dit werkt nog niet.");
         }
     }
 }

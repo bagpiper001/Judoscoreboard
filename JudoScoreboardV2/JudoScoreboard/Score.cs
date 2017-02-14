@@ -14,6 +14,7 @@ namespace JudoScoreboard
 {
     class Score
     {
+        bool goldenScore;
         int wazarirood;
         int ipponrood;
         int shidorood;
@@ -38,7 +39,7 @@ namespace JudoScoreboard
         public int confirmWit2;
         public int confirmWit3;
 
-        public int houdgreepWazari = 15;
+        public int houdgreepWazari = 10;
         public int houdgreepIppon = 20;
 
         //default values for the scores.
@@ -60,8 +61,18 @@ namespace JudoScoreboard
             confirmWit2 = 0;
             confirmRood3 = 0;
             confirmWit3 = 0;
+            goldenScore = false;
         }
 
+        public bool getGoldenScore()
+        {
+            return goldenScore;
+        }
+
+        public void setGoldenScore(bool value)
+        {
+            goldenScore = value;
+        }
         //Get all red values
         public int getRood(String score)
         {
@@ -204,7 +215,7 @@ namespace JudoScoreboard
             {
                 return true;
             }
-            if(shidowit >= 4)
+            if(shidowit >= 3)
             {
                 return true;
             }
@@ -217,7 +228,7 @@ namespace JudoScoreboard
             {
                 return true;
             }
-            if(shidorood >= 4)
+            if(shidorood >= 3)
             {
                 return true;
             }
@@ -244,27 +255,9 @@ namespace JudoScoreboard
                 }
                 else
                 {
-                    if (shidorood > shidowit)
-                    {
-                        //wit
-                        winnaar = wit;
-                        return wit + " wint op shido's en krijgt 1 punt.";
-                    }
-                    else
-                    {
-                        if (shidowit > shidorood)
-                        {
-                            //rood
-                            winnaar = rood;
-                            return rood + " wint op shido's en krijgt 1 punt.";
-                        }
-                        else
-                        {
-                            //gelijk
-                            winnaar = gelijk;
-                            return "De score is gelijk, de winnaar wordt aangewezen door de scheidsrechter en krijgt 1 punt, of er komt een Golden Score.";
-                        }
-                    }
+                    //gelijk
+                    winnaar = gelijk;
+                    return "De score is gelijk, de winnaar wordt aangewezen door de scheidsrechter en krijgt 1 punt, of er komt een Golden Score.";
                 }
             }
         }
