@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(publicScreen));
             this.lblWazariRood = new System.Windows.Forms.Label();
             this.lblIpponRood = new System.Windows.Forms.Label();
@@ -53,15 +52,12 @@
             this.lblIpponTextWit = new System.Windows.Forms.Label();
             this.lblWazariTextRood = new System.Windows.Forms.Label();
             this.lblIpponTextRood = new System.Windows.Forms.Label();
-            this.boxReclameImage = new System.Windows.Forms.PictureBox();
-            this.reclameTimer = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.boxReclameImage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblWazariRood
             // 
             this.lblWazariRood.AutoSize = true;
-            this.lblWazariRood.Location = new System.Drawing.Point(1076, 414);
+            this.lblWazariRood.Location = new System.Drawing.Point(1051, 179);
             this.lblWazariRood.Name = "lblWazariRood";
             this.lblWazariRood.Size = new System.Drawing.Size(13, 13);
             this.lblWazariRood.TabIndex = 2;
@@ -70,7 +66,7 @@
             // lblIpponRood
             // 
             this.lblIpponRood.AutoSize = true;
-            this.lblIpponRood.Location = new System.Drawing.Point(1363, 414);
+            this.lblIpponRood.Location = new System.Drawing.Point(1338, 179);
             this.lblIpponRood.Name = "lblIpponRood";
             this.lblIpponRood.Size = new System.Drawing.Size(13, 13);
             this.lblIpponRood.TabIndex = 3;
@@ -79,7 +75,7 @@
             // lblSec
             // 
             this.lblSec.AutoSize = true;
-            this.lblSec.Location = new System.Drawing.Point(879, 826);
+            this.lblSec.Location = new System.Drawing.Point(854, 591);
             this.lblSec.Name = "lblSec";
             this.lblSec.Size = new System.Drawing.Size(19, 13);
             this.lblSec.TabIndex = 9;
@@ -88,7 +84,7 @@
             // lblTimeSeperate
             // 
             this.lblTimeSeperate.AutoSize = true;
-            this.lblTimeSeperate.Location = new System.Drawing.Point(825, 826);
+            this.lblTimeSeperate.Location = new System.Drawing.Point(800, 591);
             this.lblTimeSeperate.Name = "lblTimeSeperate";
             this.lblTimeSeperate.Size = new System.Drawing.Size(10, 13);
             this.lblTimeSeperate.TabIndex = 8;
@@ -97,7 +93,7 @@
             // lblMin
             // 
             this.lblMin.AutoSize = true;
-            this.lblMin.Location = new System.Drawing.Point(679, 826);
+            this.lblMin.Location = new System.Drawing.Point(654, 591);
             this.lblMin.Name = "lblMin";
             this.lblMin.Size = new System.Drawing.Size(19, 13);
             this.lblMin.TabIndex = 7;
@@ -106,7 +102,7 @@
             // lblShidoRood
             // 
             this.lblShidoRood.AutoSize = true;
-            this.lblShidoRood.Location = new System.Drawing.Point(1363, 663);
+            this.lblShidoRood.Location = new System.Drawing.Point(1338, 428);
             this.lblShidoRood.Name = "lblShidoRood";
             this.lblShidoRood.Size = new System.Drawing.Size(13, 13);
             this.lblShidoRood.TabIndex = 10;
@@ -115,7 +111,7 @@
             // lblWazariWit
             // 
             this.lblWazariWit.AutoSize = true;
-            this.lblWazariWit.Location = new System.Drawing.Point(226, 414);
+            this.lblWazariWit.Location = new System.Drawing.Point(201, 179);
             this.lblWazariWit.Name = "lblWazariWit";
             this.lblWazariWit.Size = new System.Drawing.Size(13, 13);
             this.lblWazariWit.TabIndex = 11;
@@ -124,7 +120,7 @@
             // lblIpponWit
             // 
             this.lblIpponWit.AutoSize = true;
-            this.lblIpponWit.Location = new System.Drawing.Point(631, 414);
+            this.lblIpponWit.Location = new System.Drawing.Point(606, 179);
             this.lblIpponWit.Name = "lblIpponWit";
             this.lblIpponWit.Size = new System.Drawing.Size(13, 13);
             this.lblIpponWit.TabIndex = 12;
@@ -134,7 +130,7 @@
             // lblShidoWit
             // 
             this.lblShidoWit.AutoSize = true;
-            this.lblShidoWit.Location = new System.Drawing.Point(226, 663);
+            this.lblShidoWit.Location = new System.Drawing.Point(201, 428);
             this.lblShidoWit.Name = "lblShidoWit";
             this.lblShidoWit.Size = new System.Drawing.Size(13, 13);
             this.lblShidoWit.TabIndex = 13;
@@ -143,7 +139,7 @@
             // lblHoldingWit
             // 
             this.lblHoldingWit.AutoSize = true;
-            this.lblHoldingWit.Location = new System.Drawing.Point(644, 663);
+            this.lblHoldingWit.Location = new System.Drawing.Point(619, 428);
             this.lblHoldingWit.Name = "lblHoldingWit";
             this.lblHoldingWit.Size = new System.Drawing.Size(13, 13);
             this.lblHoldingWit.TabIndex = 14;
@@ -152,7 +148,7 @@
             // lblHoldingRood
             // 
             this.lblHoldingRood.AutoSize = true;
-            this.lblHoldingRood.Location = new System.Drawing.Point(987, 663);
+            this.lblHoldingRood.Location = new System.Drawing.Point(962, 428);
             this.lblHoldingRood.Name = "lblHoldingRood";
             this.lblHoldingRood.Size = new System.Drawing.Size(13, 13);
             this.lblHoldingRood.TabIndex = 15;
@@ -161,7 +157,7 @@
             // lblConfirmRood1
             // 
             this.lblConfirmRood1.AutoSize = true;
-            this.lblConfirmRood1.Location = new System.Drawing.Point(1063, 917);
+            this.lblConfirmRood1.Location = new System.Drawing.Point(1038, 682);
             this.lblConfirmRood1.Name = "lblConfirmRood1";
             this.lblConfirmRood1.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmRood1.TabIndex = 16;
@@ -170,7 +166,7 @@
             // lblConfirmRood2
             // 
             this.lblConfirmRood2.AutoSize = true;
-            this.lblConfirmRood2.Location = new System.Drawing.Point(1219, 917);
+            this.lblConfirmRood2.Location = new System.Drawing.Point(1194, 682);
             this.lblConfirmRood2.Name = "lblConfirmRood2";
             this.lblConfirmRood2.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmRood2.TabIndex = 17;
@@ -179,7 +175,7 @@
             // lblConfirmRood3
             // 
             this.lblConfirmRood3.AutoSize = true;
-            this.lblConfirmRood3.Location = new System.Drawing.Point(1363, 917);
+            this.lblConfirmRood3.Location = new System.Drawing.Point(1338, 682);
             this.lblConfirmRood3.Name = "lblConfirmRood3";
             this.lblConfirmRood3.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmRood3.TabIndex = 18;
@@ -188,7 +184,7 @@
             // lblConfirmWit1
             // 
             this.lblConfirmWit1.AutoSize = true;
-            this.lblConfirmWit1.Location = new System.Drawing.Point(228, 917);
+            this.lblConfirmWit1.Location = new System.Drawing.Point(203, 682);
             this.lblConfirmWit1.Name = "lblConfirmWit1";
             this.lblConfirmWit1.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmWit1.TabIndex = 19;
@@ -197,7 +193,7 @@
             // lblConfirmWit2
             // 
             this.lblConfirmWit2.AutoSize = true;
-            this.lblConfirmWit2.Location = new System.Drawing.Point(344, 917);
+            this.lblConfirmWit2.Location = new System.Drawing.Point(319, 682);
             this.lblConfirmWit2.Name = "lblConfirmWit2";
             this.lblConfirmWit2.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmWit2.TabIndex = 20;
@@ -206,7 +202,7 @@
             // lblConfirmWit3
             // 
             this.lblConfirmWit3.AutoSize = true;
-            this.lblConfirmWit3.Location = new System.Drawing.Point(490, 917);
+            this.lblConfirmWit3.Location = new System.Drawing.Point(465, 682);
             this.lblConfirmWit3.Name = "lblConfirmWit3";
             this.lblConfirmWit3.Size = new System.Drawing.Size(13, 13);
             this.lblConfirmWit3.TabIndex = 21;
@@ -215,7 +211,7 @@
             // lblShidoTextWit
             // 
             this.lblShidoTextWit.AutoSize = true;
-            this.lblShidoTextWit.Location = new System.Drawing.Point(226, 587);
+            this.lblShidoTextWit.Location = new System.Drawing.Point(201, 352);
             this.lblShidoTextWit.Name = "lblShidoTextWit";
             this.lblShidoTextWit.Size = new System.Drawing.Size(34, 13);
             this.lblShidoTextWit.TabIndex = 44;
@@ -224,7 +220,7 @@
             // lblShidoTextRood
             // 
             this.lblShidoTextRood.AutoSize = true;
-            this.lblShidoTextRood.Location = new System.Drawing.Point(1363, 587);
+            this.lblShidoTextRood.Location = new System.Drawing.Point(1338, 352);
             this.lblShidoTextRood.Name = "lblShidoTextRood";
             this.lblShidoTextRood.Size = new System.Drawing.Size(34, 13);
             this.lblShidoTextRood.TabIndex = 45;
@@ -233,7 +229,7 @@
             // lblWazariTextWit
             // 
             this.lblWazariTextWit.AutoSize = true;
-            this.lblWazariTextWit.Location = new System.Drawing.Point(226, 332);
+            this.lblWazariTextWit.Location = new System.Drawing.Point(201, 97);
             this.lblWazariTextWit.Name = "lblWazariTextWit";
             this.lblWazariTextWit.Size = new System.Drawing.Size(40, 13);
             this.lblWazariTextWit.TabIndex = 47;
@@ -242,7 +238,7 @@
             // lblIpponTextWit
             // 
             this.lblIpponTextWit.AutoSize = true;
-            this.lblIpponTextWit.Location = new System.Drawing.Point(631, 332);
+            this.lblIpponTextWit.Location = new System.Drawing.Point(606, 97);
             this.lblIpponTextWit.Name = "lblIpponTextWit";
             this.lblIpponTextWit.Size = new System.Drawing.Size(34, 13);
             this.lblIpponTextWit.TabIndex = 48;
@@ -251,7 +247,7 @@
             // lblWazariTextRood
             // 
             this.lblWazariTextRood.AutoSize = true;
-            this.lblWazariTextRood.Location = new System.Drawing.Point(1076, 332);
+            this.lblWazariTextRood.Location = new System.Drawing.Point(1051, 97);
             this.lblWazariTextRood.Name = "lblWazariTextRood";
             this.lblWazariTextRood.Size = new System.Drawing.Size(40, 13);
             this.lblWazariTextRood.TabIndex = 50;
@@ -260,33 +256,17 @@
             // lblIpponTextRood
             // 
             this.lblIpponTextRood.AutoSize = true;
-            this.lblIpponTextRood.Location = new System.Drawing.Point(1363, 332);
+            this.lblIpponTextRood.Location = new System.Drawing.Point(1338, 97);
             this.lblIpponTextRood.Name = "lblIpponTextRood";
             this.lblIpponTextRood.Size = new System.Drawing.Size(34, 13);
             this.lblIpponTextRood.TabIndex = 51;
             this.lblIpponTextRood.Text = "Ippon";
-            // 
-            // boxReclameImage
-            // 
-            this.boxReclameImage.Location = new System.Drawing.Point(613, 12);
-            this.boxReclameImage.Name = "boxReclameImage";
-            this.boxReclameImage.Size = new System.Drawing.Size(503, 303);
-            this.boxReclameImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.boxReclameImage.TabIndex = 52;
-            this.boxReclameImage.TabStop = false;
-            // 
-            // reclameTimer
-            // 
-            this.reclameTimer.Enabled = true;
-            this.reclameTimer.Interval = 5000;
-            this.reclameTimer.Tick += new System.EventHandler(this.reclameTimer_Tick);
             // 
             // publicScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1596, 874);
-            this.Controls.Add(this.boxReclameImage);
             this.Controls.Add(this.lblIpponTextRood);
             this.Controls.Add(this.lblWazariTextRood);
             this.Controls.Add(this.lblIpponTextWit);
@@ -315,7 +295,6 @@
             this.Text = "Judoscoreboard";
             this.Load += new System.EventHandler(this.publicScreen_Load);
             this.Resize += new System.EventHandler(this.publicScreen_Resize);
-            ((System.ComponentModel.ISupportInitialize)(this.boxReclameImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,7 +324,5 @@
         public System.Windows.Forms.Label lblIpponTextWit;
         public System.Windows.Forms.Label lblWazariTextRood;
         public System.Windows.Forms.Label lblIpponTextRood;
-        private System.Windows.Forms.PictureBox boxReclameImage;
-        private System.Windows.Forms.Timer reclameTimer;
     }
 }

@@ -59,22 +59,6 @@ namespace JudoScoreboard
         private void publicScreen_Load(object sender, EventArgs e)
         {
             publicScreen_Resize(sender, e);
-            boxReclameImage.Image = reclameList[0];
-            boxReclameImage.SizeMode = PictureBoxSizeMode.Zoom;
-        }
-
-        private void reclameTimer_Tick(object sender, EventArgs e)
-        {
-            timerTijd += 1;
-            if (reclameList.Count == timerTijd)
-                timerTijd = 0;
-            try
-            {
-                boxReclameImage.Image = reclameList[timerTijd];
-            } catch(Exception exc)
-            {
-                Console.WriteLine(exc);
-            }
         }
 
         private void lblIpponWit_Click(object sender, EventArgs e)
