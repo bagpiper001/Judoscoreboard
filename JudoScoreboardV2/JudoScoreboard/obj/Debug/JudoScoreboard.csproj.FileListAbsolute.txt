@@ -8,3 +8,13 @@ D:\Users\rberkel\Documents\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard
 D:\Users\rberkel\Documents\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.exe
 D:\Users\rberkel\Documents\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.pdb
 D:\Users\rberkel\Documents\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.JudoScoreboard.resources
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\bin\Debug\JudoScoreboard.exe.config
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.exe
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.pdb
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\bin\Debug\JudoScoreboard.exe
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\bin\Debug\JudoScoreboard.pdb
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.csprojResolveAssemblyReference.cache
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.JudoScoreboard.resources
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.publicScreen.resources
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.Properties.Resources.resources
+B:\Documenten\GitHub\Judoscoreboard\JudoScoreboardV2\JudoScoreboard\obj\Debug\JudoScoreboard.csproj.GenerateResource.Cache

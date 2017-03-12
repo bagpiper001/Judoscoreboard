@@ -935,41 +935,20 @@ namespace JudoScoreboard
         {
             if(isRood)
             {
-                //update rood
-                score.holdingRood += 1;
-                if (score.getRood(wazari) > 0 && score.holdingRood >= score.houdgreepWazari)
+                if (score.holdingRood >= score.houdgreepIppon)
                 {
-                    score.setWazari(true, sRood);
+                    score.setIppon(true, sRood);
                     eindeWedstrijd();
-                }
-                else
-                {
-                    if (score.holdingRood >= score.houdgreepIppon)
-                    {
-                        score.setIppon(true, sRood);
-                        eindeWedstrijd();
-                    }
                 }
                
             }
             else
             {
-                //update wit
-                score.holdingWit += 1;
-                if (score.getWit(wazari) > 0 && score.holdingWit >= score.houdgreepWazari)
+                if (score.holdingWit >= score.houdgreepIppon)
                 {
-                    score.setWazari(true, sWit);
+                    score.setIppon(true, sWit);
                     eindeWedstrijd();
                 }
-                else
-                {
-                    if (score.holdingWit >= score.houdgreepIppon)
-                    {
-                        score.setIppon(true, sWit);
-                        eindeWedstrijd();
-                    }
-                }
-               
             }
             updateScreen();
         }
